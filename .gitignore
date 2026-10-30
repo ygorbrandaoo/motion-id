@@ -1,0 +1,26 @@
+# Local data and source documents
+/data/raw/
+/data/processed/
+/docs/sources/
+
+# Environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Credentials
+.env
+.env.*
+!.env.example
+*.pem
+
+# Model artifacts
+/results/models/
+*.joblib
+
+# Operating systems
+.DS_Store
+Thumbs.db
