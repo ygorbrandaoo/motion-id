@@ -38,7 +38,7 @@ The signal channels are total acceleration, body acceleration, and body angular 
 
 ## Local inspection
 
-The supplied archive was read without extracting or modifying its data. Inspection confirmed 7,352 training rows and 2,947 test rows, all with 561 columns; six activity identifiers in each split; 21 training participants and 9 test participants; and no participant overlap. This was an inspection, not a committed automated test suite.
+The supplied dataset was inspected and extracted locally without changing its data. Inspection confirmed 7,352 training rows and 2,947 test rows, all with 561 columns; six activity identifiers in each split; 21 training participants and 9 test participants; and no participant overlap. This was an inspection, not a committed automated test suite.
 
 Feature names are not all unique. A future loader must retain the column order and use unique names, for example by including each column index. Do not use participant IDs as predictors.
 
@@ -46,7 +46,7 @@ Feature names are not all unique. A future loader must retain the column order a
 
 Measurements are from a controlled setting, one smartphone model, and waist placement. Generalization to other settings is untested.
 
-The current UCI page specifies CC BY 4.0. The supplied legacy `.names` file contains an older, different usage notice; retain the original locally and cite the current source accurately.
+The current UCI page specifies CC BY 4.0. The legacy `.names` description contains an older, different usage notice. A local backup is retained outside the repository; the redundant copy was removed from the dataset directory. Cite the current source accurately.
 
 J. Reyes-Ortiz, D. Anguita, A. Ghio, L. Oneto, and X. Parra, *Human Activity Recognition Using Smartphones*, UCI Machine Learning Repository, 2013. DOI: [10.24432/C54S4K](https://doi.org/10.24432/C54S4K).
 

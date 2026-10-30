@@ -1,7 +1,6 @@
-# Local data and source documents
+# Local data
 /data/raw/
 /data/processed/
-/docs/sources/
 
 # Environments and caches
 .venv/

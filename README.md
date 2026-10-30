@@ -56,9 +56,8 @@ motion-id/
     raw/                 # local original data, ignored
   docs/
     proposal.md          # first-cycle research proposal
-    plan.md              # execution plan and responsibilities
     dataset.md           # data layout, provenance, and limitations
-    sources/             # local original documents, ignored
+    proposal.pdf         # Portuguese submission document
 ```
 
 Source code, notebooks, tests, and result directories will be added when implemented. There are currently no installation or training commands to run.
@@ -66,7 +65,7 @@ Source code, notebooks, tests, and result directories will be added when impleme
 ## Research documents
 
 - [Research proposal](docs/proposal.md)
-- [Execution plan](docs/plan.md)
+- [Submission PDF in Portuguese](docs/proposal.pdf)
 - [Dataset and references](docs/dataset.md)
 
 ## Limitations
@@ -75,7 +74,7 @@ The dataset represents controlled activities, one smartphone model, and waist pl
 
 ## Collaboration
 
-Use short task branches and Conventional Commits. Review changes before integration, record actual checks, and keep documentation aligned with implemented behavior. Never commit credentials, raw datasets, or large model files. Do not report planned experiments as completed results.
+Keep `main` as the reviewed project version and use `dev` for integration. Create short task branches from `dev` and use Conventional Commits. Review changes before integration, record actual checks, and keep documentation aligned with implemented behavior. Never commit credentials, raw datasets, or large model files. Do not report planned experiments as completed results.
 
 ## Citation and licensing
 
