@@ -23,3 +23,12 @@ __pycache__/
 # Operating systems
 .DS_Store
 Thumbs.db
+
+# Local AI agent instructions and settings
+AGENTS.md
+AGENTS.override.md
+CLAUDE.md
+CLAUDE.local.md
+.agents/
+.claude/
+.codex/
