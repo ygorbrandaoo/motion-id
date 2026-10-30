@@ -32,4 +32,4 @@ A reproducible comparison, an analysis of classification errors, and a discussio
 
 ## First-cycle submission
 
-The supplied course brief requests the research problem, research questions, dataset, and possible models with justification, delivered as a PDF. This Markdown document is the editable proposal source; the submission PDF has not yet been prepared. The final paper format, deadline, and page limit require confirmation with the instructor.
+The supplied course brief requests the research problem, research questions, dataset, and possible models with justification, delivered as a PDF. This Markdown document is the editable proposal source; the Portuguese [submission PDF](proposal.pdf) is available alongside it. The final paper format, deadline, and page limit require confirmation with the instructor.
