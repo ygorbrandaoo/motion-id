@@ -6,7 +6,7 @@ Motion ID is an undergraduate artificial intelligence research project investiga
 
 ## Status
 
-Research planning and repository setup. No training pipeline, automated tests, or experimental results have been implemented yet. Dataset dimensions and participant separation have been checked locally. This project uses numerical sensor measurements, not images or videos.
+Research in progress. The data loader, participant-grouped validation, and evaluation metrics are implemented and tested. The SVM and Random Forest models are not implemented yet, and no experimental results exist. This project uses numerical sensor measurements, not images or videos.
 
 ## Research objectives
 
@@ -50,7 +50,17 @@ Logistic Regression is an optional baseline. Additional models are secondary to 
 ```text
 motion-id/
   README.md
-  .gitignore
+  pyproject.toml         # dependencies and pytest settings, managed with uv
+  requirements.txt       # pinned scikit-learn version
+  configs/
+    default.yaml         # folds, seed, and selection metric
+  src/har/
+    data.py              # loads the UCI HAR files (features, labels, participants)
+    config.py            # reads configs/default.yaml
+    validation.py        # participant-grouped folds and overlap checks
+    metrics.py           # accuracy, macro precision/recall/F1, confusion matrix
+    evaluate.py          # cross-validation, final test run, JSON and CSV reports
+  tests/                 # one test file per module
   data/
     README.md
     raw/                 # local original data, ignored
@@ -60,7 +70,14 @@ motion-id/
     proposal.pdf         # Portuguese submission document
 ```
 
-Source code, notebooks, tests, and result directories will be added when implemented. There are currently no installation or training commands to run.
+## Setup and tests
+
+```bash
+uv sync
+uv run pytest
+```
+
+Tests that use the real dataset are skipped if it is not in `data/raw/UCI HAR Dataset/`. Notebooks, model code, and result directories will be added when implemented. There are no training commands yet.
 
 ## Research documents
 
