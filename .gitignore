@@ -32,3 +32,11 @@ CLAUDE.local.md
 .agents/
 .claude/
 .codex/
+
+# LaTeX build files
+paper/*.aux
+paper/*.log
+paper/*.bbl
+paper/*.blg
+paper/*.out
+paper/main.pdf

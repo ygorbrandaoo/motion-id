@@ -1,0 +1,16 @@
+% Responsável: Dev 1
+\section{Introdução}
+
+Smartphones modernos trazem acelerômetro e giroscópio, sensores que registram aceleração e rotação do aparelho. Essas medidas não dizem diretamente o que a pessoa está fazendo, mas variam de forma característica conforme a atividade: caminhar, subir escadas, ficar sentado ou deitado produzem padrões de movimento distintos. Reconhecer atividades a partir desses sinais permite aplicações como monitoramento de saúde, acompanhamento de idosos e estímulo à atividade física, sem exigir equipamento além do telefone.
+
+Um modelo desse tipo só é útil se funcionar para pessoas que não participaram do seu treinamento. Quando janelas consecutivas de uma mesma pessoa aparecem no treino e na avaliação, o resultado tende a ser otimista, pois o modelo pode aprender traços individuais em vez da atividade. Por isso, este trabalho avalia os modelos com participantes inteiros separados entre treino e validação.
+
+Este trabalho compara duas técnicas de aprendizado de máquina, Máquinas de Vetores de Suporte (SVM) e Random Forest, no reconhecimento de seis atividades cotidianas a partir de um smartphone preso à cintura. Os dados são do conjunto UCI HAR \cite{anguita2013,uci_har}. As perguntas de pesquisa são:
+
+\begin{enumerate}
+  \item Com que precisão as seis atividades são reconhecidas para participantes não vistos no treino?
+  \item Como SVM e Random Forest se comparam em desempenho de reconhecimento e custo computacional?
+  \item Quais atividades são mais confundidas e quais características dos sensores ajudam a distingui-las?
+\end{enumerate}
+
+O restante do artigo está organizado da seguinte forma. A Seção~II revisa trabalhos relacionados. A Seção~III descreve o conjunto de dados e a metodologia. A Seção~IV apresenta os modelos, a Seção~V os resultados, a Seção~VI a discussão e a Seção~VII a conclusão.
