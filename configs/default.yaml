@@ -1,0 +1,5 @@
+# Shared experiment settings. See docs/decisions.md for the agreed protocol.
+data_dir: data/raw/UCI HAR Dataset
+n_splits: 5          # participant-grouped folds on the official training set
+random_state: 42     # seed for every model that uses randomness
+selection_metric: f1_macro
