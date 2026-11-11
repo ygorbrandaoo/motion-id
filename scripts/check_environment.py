@@ -51,6 +51,8 @@ OPTIONAL_PACKAGES = [
 ]
 
 REQUIRED_FILES = [
+    "features.txt",
+    "activity_labels.txt",
     "train/X_train.txt",
     "train/y_train.txt",
     "train/subject_train.txt",
