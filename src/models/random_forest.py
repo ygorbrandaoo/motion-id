@@ -1,25 +1,45 @@
-"""Random Forest tuning and evaluation for the UCI HAR dataset."""
+"""Random Forest tuning and evaluation for the UCI HAR dataset.
+
+Run from the repository root:
+
+    python -m models.random_forest --mode cv
+    python -m models.random_forest --mode holdout --confirm-frozen
+"""
 
 import argparse
 import json
 from pathlib import Path
 from time import perf_counter
 
+import numpy as np
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV
 
 from har.config import DEFAULT_CONFIG, PROJECT_ROOT, load_config
 from har.data import load_split
-from har.evaluate import evaluate_holdout, save_results
+from har.evaluate import evaluate_holdout, save_results, evaluate_grouped
 from har.validation import group_kfold_splits
 
 MODEL_NAME = "random_forest"
 RESULTS_DIR = PROJECT_ROOT / "results" / "metrics"
 CV_RESULT_PATH = RESULTS_DIR / "random_forest_cv.json"
 HOLDOUT_RESULT_PATH = RESULTS_DIR / "random_forest_holdout.json"
+
+#Esse PARAM_GRID é somente para testar se os resultados estão sendo salvos 
+#corretamente, descomente esse para param_grid e comente o outro para testar
+#o salvamento dos resultados!
+#PARAM_GRID = {
+#    "n_estimators": [2, 3],
+#    "max_features": [None],
+#    "max_depth": [2,3]
+#}
+
 PARAM_GRID = {
     "n_estimators": [100, 300],
-    "max_features": ["sqrt", 0.5],
+    "max_features": ["sqrt", 0.05],
+    "max_depth" : [None, 5, 10]
 }
 SELECTION_METRICS = (
     "accuracy",
@@ -28,11 +48,19 @@ SELECTION_METRICS = (
     "f1_macro",
 )
 
+def build_pipeline(random_state=42, **random_forest_params):
+    pipeline = Pipeline( [
+        ('scaler', StandardScaler()),
+        ('random_forest', RandomForestClassifier())
+    ])
 
-def build_estimator(random_state=42):
-    """Create an unfitted, reproducible Random Forest classifier."""
-    return RandomForestClassifier(random_state=random_state)
+    if random_forest_params:
+        pipeline.set_params(**{f"random_forest__{key}": value for key, value in random_forest_params.items()})
 
+    return pipeline
+
+def _plain(value):
+    return value.item() if isinstance(value, np.generic) else value
 
 def run_grouped_search(
     X,
@@ -40,87 +68,63 @@ def run_grouped_search(
     groups,
     *,
     random_state=42,
-    selection_metric="f1_macro",
+    scoring="f1_macro",
     n_splits=5,
     n_jobs=1,
     param_grid=None,
 ):
     """Tune the forest using only folds that hold out complete participants."""
-    if selection_metric not in SELECTION_METRICS:
+    if scoring not in SELECTION_METRICS:
         raise ValueError(
             f"selection_metric must be one of {SELECTION_METRICS}"
         )
 
     splits = group_kfold_splits(X, y, groups, n_splits=n_splits)
+    selected_param_grid = PARAM_GRID if param_grid is None else param_grid
+    pipeline_param_grid = {
+        (
+            key if key.startswith("random_forest__")
+            else f"random_forest__{key}"
+        ): values
+        for key, values in selected_param_grid.items()
+    }
     search = GridSearchCV(
-        estimator=build_estimator(random_state),
-        param_grid=PARAM_GRID if param_grid is None else param_grid,
-        scoring=selection_metric,
+        estimator=build_pipeline(random_state),
+        param_grid=pipeline_param_grid,
+        scoring=scoring,
         cv=splits,
         refit=True,
         n_jobs=n_jobs,
         error_score="raise",
     )
+    
+    start = perf_counter()
     search.fit(X, y)
-    return search
+    search_seconds = perf_counter() - start
 
-
-def _search_report(
-    search,
-    groups,
-    *,
-    selection_metric,
-    n_splits,
-    elapsed_seconds,
-):
-    """Convert GridSearchCV's results to JSON-serializable values."""
+    results = search.cv_results_
+    best = int(np.argmin(results["rank_test_score"]))
     return {
-        "model": MODEL_NAME,
-        "evaluation": "grouped_hyperparameter_search",
-        "selection_metric": selection_metric,
+        "best_params": {
+            key.removeprefix("random_forest__"): _plain(value)
+            for key, value in results["params"][best].items()
+        },
+        "best_score": float(results["mean_test_score"][best]),
+        "best_score_std": float(results["std_test_score"][best]),
+        "scoring": scoring,
+        "n_candidates": len(results["params"]),
         "n_splits": n_splits,
-        "elapsed_seconds": elapsed_seconds,
-        "folds": [
-            {
-                "fold": fold_number,
-                "n_train": len(train_indices),
-                "n_validation": len(validation_indices),
-                "train_groups": sorted(set(groups[train_indices].tolist())),
-                "validation_groups": sorted(
-                    set(groups[validation_indices].tolist())
-                ),
-            }
-            for fold_number, (train_indices, validation_indices) in enumerate(
-                search.cv,
-                start=1,
-            )
-        ],
-        "best_score": float(search.best_score_),
-        "best_params": search.best_params_,
-        "candidates": [
-            {
-                "params": params,
-                "mean_test_score": float(mean_score),
-                "std_test_score": float(std_score),
-            }
-            for params, mean_score, std_score in zip(
-                search.cv_results_["params"],
-                search.cv_results_["mean_test_score"],
-                search.cv_results_["std_test_score"],
-                strict=True,
-            )
-        ],
+        "param_grid": param_grid,
+        "search_time_seconds": search_seconds
     }
 
-
-def run_experiment(
+def run_cv(
     config_path=DEFAULT_CONFIG,
     *,
     n_jobs=1,
     cv_result_path=CV_RESULT_PATH,
-    holdout_result_path=HOLDOUT_RESULT_PATH,
 ):
-    """Tune on the official training partition, then evaluate the reserved test set."""
+    """Tune on the official training partition without reading the test set."""
     config = load_config(config_path)
     X_train, y_train, train_groups = load_split("train", config["data_dir"])
 
@@ -130,37 +134,65 @@ def run_experiment(
         y_train,
         train_groups,
         random_state=config["random_state"],
-        selection_metric=config["selection_metric"],
+        scoring=config["selection_metric"],
         n_splits=config["n_splits"],
         n_jobs=n_jobs,
     )
-    search_report = _search_report(
-        search,
-        train_groups,
-        selection_metric=config["selection_metric"],
-        n_splits=config["n_splits"],
-        elapsed_seconds=perf_counter() - started,
-    )
-    save_results(search_report, cv_result_path)
 
-    X_test, y_test, test_groups = load_split("test", config["data_dir"])
-    holdout_report = evaluate_holdout(
-        search.best_estimator_,
+    estimator = build_pipeline(config["random_state"], **search["best_params"])
+    search_report = evaluate_grouped(
+        estimator,
         X_train,
         y_train,
         train_groups,
-        X_test,
-        y_test,
-        test_groups,
+        model_name=MODEL_NAME,
+        n_splits=config["n_splits"]
+    )
+    search_report["search"] = search
+
+    save_results(search_report, cv_result_path)
+    return search_report
+
+
+def run_holdout(
+    config_path=DEFAULT_CONFIG,
+    *,
+    cv_result_path=CV_RESULT_PATH,
+    holdout_result_path=HOLDOUT_RESULT_PATH,
+):
+    """Evaluate the reserved test set using parameters saved by the CV stage."""
+    config = load_config(config_path)
+    if not cv_result_path.is_file():
+        raise FileNotFoundError(f"Run --mode cv first; missing {cv_result_path}")
+
+    best_params = json.loads(
+        cv_result_path.read_text(encoding="utf-8")
+    )["search"]["best_params"]
+    X_train, y_train, train_groups = load_split("train", config["data_dir"])
+    X_test, y_test, test_groups = load_split("test", config["data_dir"])
+
+    evaluator = build_pipeline(config["random_state"], **best_params)
+    holdout_report = evaluate_holdout(
+        evaluator,
+        X_train, y_train, train_groups,
+        X_test, y_test, test_groups,
         model_name=MODEL_NAME,
     )
+    holdout_report["best_params"] = best_params
+    
     save_results(holdout_report, holdout_result_path)
-    return search_report, holdout_report
+    return holdout_report
 
 
 def main(argv=None):
     parser = argparse.ArgumentParser(
         description="Tune and evaluate a Random Forest on UCI HAR."
+    )
+    parser.add_argument("--mode", choices=("cv", "holdout"), default="cv")
+    parser.add_argument(
+        "--confirm-frozen",
+        action="store_true",
+        help="required for holdout: confirms the parameters were frozen",
     )
     parser.add_argument(
         "--config",
@@ -176,18 +208,26 @@ def main(argv=None):
     )
     args = parser.parse_args(argv)
 
-    search_report, holdout_report = run_experiment(
-        args.config,
-        n_jobs=args.n_jobs,
-    )
-    print(json.dumps({
-        "best_params": search_report["best_params"],
-        "best_score": search_report["best_score"],
-        "holdout_metrics": holdout_report["metrics"],
-        "cv_result_path": str(CV_RESULT_PATH),
-        "holdout_result_path": str(HOLDOUT_RESULT_PATH),
-    }, indent=2))
+    if args.mode == "holdout" and not args.confirm_frozen:
+        parser.error(
+            "holdout uses the official test set; pass --confirm-frozen "
+            "after parameters are frozen"
+        )
 
+    if args.mode == "cv":
+        search_report = run_cv(args.config, n_jobs=args.n_jobs)
+        summary = search_report['summary']
+        print(f"Best parameters: {search_report['search']['best_params']}")
+        print(f"Search time: {search_report['search']['search_time_seconds']:.1f} s")
+        for key in ("accuracy", "f1_macro", "fit_time_seconds"):
+            print(f"CV {key}: {summary[key]['mean']:.4f} +/- {summary[key]['std']:.4f}")
+        print(f"Saved: {CV_RESULT_PATH}")
+    else:
+        holdout_report = run_holdout(args.config)
+        for key, value in holdout_report["metrics"].items():
+            if key != "confusion matrix":
+                print(f"Test {key}: {value:.4f}")
+            print(f"Saved: {HOLDOUT_RESULT_PATH}")
 
 if __name__ == "__main__":
     main()
