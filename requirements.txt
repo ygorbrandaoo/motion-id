@@ -1,1 +1,11 @@
 scikit-learn==1.9.1
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+joblib
+pyyaml
+jupyterlab
+pytest
+ruff
