@@ -4,6 +4,8 @@
 
 # Environments and caches
 .venv/
+.venv-*/
+*.egg-info/
 __pycache__/
 *.py[cod]
 .pytest_cache/
