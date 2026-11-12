@@ -18,7 +18,6 @@ __pycache__/
 
 # Model artifacts
 /results/models/
-/results/metrics/
 *.joblib
 
 # Operating systems
