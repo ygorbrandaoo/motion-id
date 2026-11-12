@@ -10,7 +10,7 @@ import numpy as np
 from sklearn.pipeline import Pipeline
 
 from har.validation import group_kfold_splits
-from models.random_forest import build_pipeline, run_grouped_search, run_holdout
+from har.models.random_forest import build_pipeline, run_grouped_search, run_holdout
 
 
 class RandomForestTests(unittest.TestCase):
@@ -26,7 +26,7 @@ class RandomForestTests(unittest.TestCase):
         splits = group_kfold_splits(X, y, groups, n_splits=3)
 
         with patch(
-            "models.random_forest.group_kfold_splits",
+            "har.models.random_forest.group_kfold_splits",
             return_value=splits,
         ):
             search = run_grouped_search(
@@ -85,16 +85,16 @@ class RandomForestTests(unittest.TestCase):
             )
 
             with (
-                patch("models.random_forest.load_config", return_value=config),
+                patch("har.models.random_forest.load_config", return_value=config),
                 patch(
-                    "models.random_forest.load_split",
+                    "har.models.random_forest.load_split",
                     side_effect=[train_data, test_data],
                 ) as load_split,
                 patch(
-                    "models.random_forest.evaluate_holdout",
+                    "har.models.random_forest.evaluate_holdout",
                     return_value={"evaluation": "holdout", "metrics": {}},
                 ) as evaluate_holdout,
-                patch("models.random_forest.save_results"),
+                patch("har.models.random_forest.save_results"),
             ):
                 result = run_holdout(
                     cv_result_path=cv_path,

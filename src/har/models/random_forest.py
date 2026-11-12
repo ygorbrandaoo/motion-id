@@ -51,7 +51,7 @@ SELECTION_METRICS = (
 def build_pipeline(random_state=42, **random_forest_params):
     pipeline = Pipeline( [
         ('scaler', StandardScaler()),
-        ('random_forest', RandomForestClassifier())
+        ('random_forest', RandomForestClassifier(random_state=random_state, **random_forest_params))
     ])
 
     if random_forest_params:
@@ -114,7 +114,7 @@ def run_grouped_search(
         "scoring": scoring,
         "n_candidates": len(results["params"]),
         "n_splits": n_splits,
-        "param_grid": param_grid,
+        "param_grid": selected_param_grid,
         "search_time_seconds": search_seconds
     }
 
