@@ -225,9 +225,9 @@ def main(argv=None):
     else:
         holdout_report = run_holdout(args.config)
         for key, value in holdout_report["metrics"].items():
-            if key != "confusion matrix":
+            if key != "confusion_matrix":
                 print(f"Test {key}: {value:.4f}")
-            print(f"Saved: {HOLDOUT_RESULT_PATH}")
+        print(f"Saved: {HOLDOUT_RESULT_PATH}")
 
 if __name__ == "__main__":
     main()
