@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Human activity recognition from smartphone motion sensors"
 requires-python = ">=3.12"
 dependencies = [
+    "matplotlib",
     "numpy",
     "pyyaml",
     "scikit-learn==1.9.1",
@@ -11,7 +12,7 @@ dependencies = [
 
 [dependency-groups]
 dev = ["pytest"]
-notebook = ["ipykernel", "matplotlib", "nbconvert", "nbformat", "pandas"]
+notebook = ["ipykernel", "nbconvert", "nbformat", "pandas"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
