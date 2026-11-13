@@ -1,0 +1,235 @@
+{
+  "labels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "names": [
+    "Caminhando",
+    "Subindo escadas",
+    "Descendo escadas",
+    "Sentado",
+    "Em p\u00e9",
+    "Deitado"
+  ],
+  "n_test": 2947,
+  "confusion_matrix": [
+    [
+      495,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      16,
+      453,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      15,
+      399,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      436,
+      53,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      18,
+      514,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      537
+    ]
+  ],
+  "confusion_matrix_normalized": [
+    [
+      0.9979838709677419,
+      0.0,
+      0.0020161290322580645,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.03397027600849257,
+      0.9617834394904459,
+      0.004246284501061571,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.014285714285714285,
+      0.03571428571428571,
+      0.95,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.004073319755600814,
+      0.0,
+      0.8879837067209776,
+      0.1079429735234216,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.03383458646616541,
+      0.9661654135338346,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "per_class": [
+    {
+      "label": 1,
+      "name": "Caminhando",
+      "precision": 0.9574468085106383,
+      "recall": 0.9979838709677419,
+      "f1": 0.9772951628825272,
+      "support": 496
+    },
+    {
+      "label": 2,
+      "name": "Subindo escadas",
+      "precision": 0.9638297872340426,
+      "recall": 0.9617834394904459,
+      "f1": 0.9628055260361318,
+      "support": 471
+    },
+    {
+      "label": 3,
+      "name": "Descendo escadas",
+      "precision": 0.9925373134328358,
+      "recall": 0.95,
+      "f1": 0.9708029197080292,
+      "support": 420
+    },
+    {
+      "label": 4,
+      "name": "Sentado",
+      "precision": 0.960352422907489,
+      "recall": 0.8879837067209776,
+      "f1": 0.9227513227513228,
+      "support": 491
+    },
+    {
+      "label": 5,
+      "name": "Em p\u00e9",
+      "precision": 0.9065255731922398,
+      "recall": 0.9661654135338346,
+      "f1": 0.935395814376706,
+      "support": 532
+    },
+    {
+      "label": 6,
+      "name": "Deitado",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 537
+    }
+  ],
+  "top_confusions": [
+    {
+      "true": 4,
+      "true_name": "Sentado",
+      "predicted": 5,
+      "predicted_name": "Em p\u00e9",
+      "count": 53,
+      "share_of_true_class": 0.1079429735234216
+    },
+    {
+      "true": 5,
+      "true_name": "Em p\u00e9",
+      "predicted": 4,
+      "predicted_name": "Sentado",
+      "count": 18,
+      "share_of_true_class": 0.03383458646616541
+    },
+    {
+      "true": 2,
+      "true_name": "Subindo escadas",
+      "predicted": 1,
+      "predicted_name": "Caminhando",
+      "count": 16,
+      "share_of_true_class": 0.03397027600849257
+    },
+    {
+      "true": 3,
+      "true_name": "Descendo escadas",
+      "predicted": 2,
+      "predicted_name": "Subindo escadas",
+      "count": 15,
+      "share_of_true_class": 0.03571428571428571
+    },
+    {
+      "true": 3,
+      "true_name": "Descendo escadas",
+      "predicted": 1,
+      "predicted_name": "Caminhando",
+      "count": 6,
+      "share_of_true_class": 0.014285714285714285
+    },
+    {
+      "true": 2,
+      "true_name": "Subindo escadas",
+      "predicted": 3,
+      "predicted_name": "Descendo escadas",
+      "count": 2,
+      "share_of_true_class": 0.004246284501061571
+    },
+    {
+      "true": 4,
+      "true_name": "Sentado",
+      "predicted": 2,
+      "predicted_name": "Subindo escadas",
+      "count": 2,
+      "share_of_true_class": 0.004073319755600814
+    },
+    {
+      "true": 1,
+      "true_name": "Caminhando",
+      "predicted": 3,
+      "predicted_name": "Descendo escadas",
+      "count": 1,
+      "share_of_true_class": 0.0020161290322580645
+    }
+  ]
+}

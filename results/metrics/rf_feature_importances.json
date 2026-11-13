@@ -1,0 +1,2817 @@
+{
+  "activity_names_pt": {
+    "1": "Caminhando",
+    "2": "Subindo",
+    "3": "Descendo escadas",
+    "4": "Sentado",
+    "5": "Em p\u00e9",
+    "6": "Deitado"
+  },
+  "feature_importances": [
+    {
+      "rank": 1,
+      "feature": "41_tGravityAcc-mean()-X",
+      "importance": 0.03637021261458418
+    },
+    {
+      "rank": 2,
+      "feature": "559_angle(X,gravityMean)",
+      "importance": 0.03126109205426282
+    },
+    {
+      "rank": 3,
+      "feature": "50_tGravityAcc-max()-X",
+      "importance": 0.031093167263320756
+    },
+    {
+      "rank": 4,
+      "feature": "42_tGravityAcc-mean()-Y",
+      "importance": 0.02838882381059444
+    },
+    {
+      "rank": 5,
+      "feature": "57_tGravityAcc-energy()-X",
+      "importance": 0.02489891914898622
+    },
+    {
+      "rank": 6,
+      "feature": "54_tGravityAcc-min()-Y",
+      "importance": 0.02447909722837427
+    },
+    {
+      "rank": 7,
+      "feature": "53_tGravityAcc-min()-X",
+      "importance": 0.02130973349091647
+    },
+    {
+      "rank": 8,
+      "feature": "51_tGravityAcc-max()-Y",
+      "importance": 0.020462739997007005
+    },
+    {
+      "rank": 9,
+      "feature": "560_angle(Y,gravityMean)",
+      "importance": 0.020224843733862373
+    },
+    {
+      "rank": 10,
+      "feature": "58_tGravityAcc-energy()-Y",
+      "importance": 0.015570930814048551
+    },
+    {
+      "rank": 11,
+      "feature": "390_fBodyAccJerk-bandsEnergy()-1,16",
+      "importance": 0.013008080139785286
+    },
+    {
+      "rank": 12,
+      "feature": "84_tBodyAccJerk-std()-X",
+      "importance": 0.012879979381665742
+    },
+    {
+      "rank": 13,
+      "feature": "561_angle(Z,gravityMean)",
+      "importance": 0.01258973575699799
+    },
+    {
+      "rank": 14,
+      "feature": "272_fBodyAcc-mad()-X",
+      "importance": 0.011971759966063582
+    },
+    {
+      "rank": 15,
+      "feature": "43_tGravityAcc-mean()-Z",
+      "importance": 0.011441187902048837
+    },
+    {
+      "rank": 16,
+      "feature": "55_tGravityAcc-min()-Z",
+      "importance": 0.01140216210719758
+    },
+    {
+      "rank": 17,
+      "feature": "505_fBodyAccMag-mad()",
+      "importance": 0.011084708391329716
+    },
+    {
+      "rank": 18,
+      "feature": "70_tGravityAcc-arCoeff()-Y,1",
+      "importance": 0.01100607398616032
+    },
+    {
+      "rank": 19,
+      "feature": "404_fBodyAccJerk-bandsEnergy()-1,16",
+      "importance": 0.010692192186923393
+    },
+    {
+      "rank": 20,
+      "feature": "354_fBodyAccJerk-max()-X",
+      "importance": 0.010667232683839107
+    },
+    {
+      "rank": 21,
+      "feature": "72_tGravityAcc-arCoeff()-Y,3",
+      "importance": 0.01031093749683184
+    },
+    {
+      "rank": 22,
+      "feature": "361_fBodyAccJerk-energy()-X",
+      "importance": 0.009212819910340432
+    },
+    {
+      "rank": 23,
+      "feature": "509_fBodyAccMag-energy()",
+      "importance": 0.009203533092568118
+    },
+    {
+      "rank": 24,
+      "feature": "288_fBodyAcc-entropy()-X",
+      "importance": 0.009064000419775793
+    },
+    {
+      "rank": 25,
+      "feature": "394_fBodyAccJerk-bandsEnergy()-1,24",
+      "importance": 0.00878897280127723
+    },
+    {
+      "rank": 26,
+      "feature": "233_tBodyAccJerkMag-energy()",
+      "importance": 0.008724505364925535
+    },
+    {
+      "rank": 27,
+      "feature": "59_tGravityAcc-energy()-Z",
+      "importance": 0.008689185863220539
+    },
+    {
+      "rank": 28,
+      "feature": "96_tBodyAccJerk-sma()",
+      "importance": 0.008651277610530026
+    },
+    {
+      "rank": 29,
+      "feature": "182_tBodyGyroJerk-iqr()-Z",
+      "importance": 0.008489540133739133
+    },
+    {
+      "rank": 30,
+      "feature": "64_tGravityAcc-entropy()-Y",
+      "importance": 0.008212187605080896
+    },
+    {
+      "rank": 31,
+      "feature": "266_fBodyAcc-mean()-X",
+      "importance": 0.007826060306040944
+    },
+    {
+      "rank": 32,
+      "feature": "74_tGravityAcc-arCoeff()-Z,1",
+      "importance": 0.007706705990252631
+    },
+    {
+      "rank": 33,
+      "feature": "4_tBodyAcc-std()-X",
+      "importance": 0.007573331430285256
+    },
+    {
+      "rank": 34,
+      "feature": "180_tBodyGyroJerk-iqr()-X",
+      "importance": 0.007561689178277248
+    },
+    {
+      "rank": 35,
+      "feature": "216_tGravityAccMag-mad()",
+      "importance": 0.007547877777009595
+    },
+    {
+      "rank": 36,
+      "feature": "10_tBodyAcc-max()-X",
+      "importance": 0.007393970196225268
+    },
+    {
+      "rank": 37,
+      "feature": "504_fBodyAccMag-std()",
+      "importance": 0.0072521977772642835
+    },
+    {
+      "rank": 38,
+      "feature": "169_tBodyGyroJerk-mad()-Z",
+      "importance": 0.006849823156807584
+    },
+    {
+      "rank": 39,
+      "feature": "88_tBodyAccJerk-mad()-Y",
+      "importance": 0.006844441113372219
+    },
+    {
+      "rank": 40,
+      "feature": "38_tBodyAcc-correlation()-X,Y",
+      "importance": 0.006772805263301615
+    },
+    {
+      "rank": 41,
+      "feature": "176_tBodyGyroJerk-sma()",
+      "importance": 0.006669497398606481
+    },
+    {
+      "rank": 42,
+      "feature": "348_fBodyAccJerk-std()-X",
+      "importance": 0.006607536555189182
+    },
+    {
+      "rank": 43,
+      "feature": "311_fBodyAcc-bandsEnergy()-1,16",
+      "importance": 0.00652340698318444
+    },
+    {
+      "rank": 44,
+      "feature": "76_tGravityAcc-arCoeff()-Z,3",
+      "importance": 0.006437416474688731
+    },
+    {
+      "rank": 45,
+      "feature": "345_fBodyAccJerk-mean()-X",
+      "importance": 0.006336214403576075
+    },
+    {
+      "rank": 46,
+      "feature": "269_fBodyAcc-std()-X",
+      "importance": 0.0059919427806369606
+    },
+    {
+      "rank": 47,
+      "feature": "52_tGravityAcc-max()-Z",
+      "importance": 0.0059204708642134314
+    },
+    {
+      "rank": 48,
+      "feature": "315_fBodyAcc-bandsEnergy()-1,24",
+      "importance": 0.005814745860280686
+    },
+    {
+      "rank": 49,
+      "feature": "66_tGravityAcc-arCoeff()-X,1",
+      "importance": 0.005630046995524469
+    },
+    {
+      "rank": 50,
+      "feature": "210_tBodyAccMag-arCoeff()1",
+      "importance": 0.005614695903272581
+    },
+    {
+      "rank": 51,
+      "feature": "508_fBodyAccMag-sma()",
+      "importance": 0.005497883953937445
+    },
+    {
+      "rank": 52,
+      "feature": "215_tGravityAccMag-std()",
+      "importance": 0.005451933569945608
+    },
+    {
+      "rank": 53,
+      "feature": "17_tBodyAcc-energy()-X",
+      "importance": 0.005243321228724562
+    },
+    {
+      "rank": 54,
+      "feature": "67_tGravityAcc-arCoeff()-X,2",
+      "importance": 0.005073681907476599
+    },
+    {
+      "rank": 55,
+      "feature": "282_fBodyAcc-energy()-X",
+      "importance": 0.0050165564053762145
+    },
+    {
+      "rank": 56,
+      "feature": "75_tGravityAcc-arCoeff()-Z,2",
+      "importance": 0.00484322006162828
+    },
+    {
+      "rank": 57,
+      "feature": "382_fBodyAccJerk-bandsEnergy()-1,8",
+      "importance": 0.004665298874829941
+    },
+    {
+      "rank": 58,
+      "feature": "223_tGravityAccMag-arCoeff()1",
+      "importance": 0.004652483384278233
+    },
+    {
+      "rank": 59,
+      "feature": "383_fBodyAccJerk-bandsEnergy()-9,16",
+      "importance": 0.0046518446640511826
+    },
+    {
+      "rank": 60,
+      "feature": "355_fBodyAccJerk-max()-Y",
+      "importance": 0.0046171313612914065
+    },
+    {
+      "rank": 61,
+      "feature": "303_fBodyAcc-bandsEnergy()-1,8",
+      "importance": 0.00453321554121941
+    },
+    {
+      "rank": 62,
+      "feature": "68_tGravityAcc-arCoeff()-X,3",
+      "importance": 0.004516824806306503
+    },
+    {
+      "rank": 63,
+      "feature": "253_tBodyGyroJerkMag-mean()",
+      "importance": 0.004488741532374614
+    },
+    {
+      "rank": 64,
+      "feature": "56_tGravityAcc-sma()",
+      "importance": 0.004478914162371723
+    },
+    {
+      "rank": 65,
+      "feature": "97_tBodyAccJerk-energy()-X",
+      "importance": 0.004465433108769537
+    },
+    {
+      "rank": 66,
+      "feature": "451_fBodyGyro-maxInds-Z",
+      "importance": 0.004415974219905341
+    },
+    {
+      "rank": 67,
+      "feature": "101_tBodyAccJerk-iqr()-Y",
+      "importance": 0.004410895967573584
+    },
+    {
+      "rank": 68,
+      "feature": "232_tBodyAccJerkMag-sma()",
+      "importance": 0.004397074688431097
+    },
+    {
+      "rank": 69,
+      "feature": "351_fBodyAccJerk-mad()-X",
+      "importance": 0.004374535576449659
+    },
+    {
+      "rank": 70,
+      "feature": "203_tBodyAccMag-mad()",
+      "importance": 0.0043717950108015545
+    },
+    {
+      "rank": 71,
+      "feature": "100_tBodyAccJerk-iqr()-X",
+      "importance": 0.00431394642657795
+    },
+    {
+      "rank": 72,
+      "feature": "7_tBodyAcc-mad()-X",
+      "importance": 0.004284762282432174
+    },
+    {
+      "rank": 73,
+      "feature": "346_fBodyAccJerk-mean()-Y",
+      "importance": 0.004241884777572071
+    },
+    {
+      "rank": 74,
+      "feature": "71_tGravityAcc-arCoeff()-Y,2",
+      "importance": 0.004211267986254125
+    },
+    {
+      "rank": 75,
+      "feature": "202_tBodyAccMag-std()",
+      "importance": 0.0040795864975695165
+    },
+    {
+      "rank": 76,
+      "feature": "461_fBodyGyro-bandsEnergy()-1,8",
+      "importance": 0.003740856618064406
+    },
+    {
+      "rank": 77,
+      "feature": "427_fBodyGyro-std()-X",
+      "importance": 0.0036755580316029384
+    },
+    {
+      "rank": 78,
+      "feature": "503_fBodyAccMag-mean()",
+      "importance": 0.0034919637589141943
+    },
+    {
+      "rank": 79,
+      "feature": "296_fBodyAcc-meanFreq()-Z",
+      "importance": 0.003414001774173757
+    },
+    {
+      "rank": 80,
+      "feature": "511_fBodyAccMag-entropy()",
+      "importance": 0.003369416236531846
+    },
+    {
+      "rank": 81,
+      "feature": "63_tGravityAcc-entropy()-X",
+      "importance": 0.0033648762565743296
+    },
+    {
+      "rank": 82,
+      "feature": "449_fBodyGyro-maxInds-X",
+      "importance": 0.0031815724842570664
+    },
+    {
+      "rank": 83,
+      "feature": "372_fBodyAccJerk-maxInds-Z",
+      "importance": 0.0031267289460216656
+    },
+    {
+      "rank": 84,
+      "feature": "304_fBodyAcc-bandsEnergy()-9,16",
+      "importance": 0.003124497921003821
+    },
+    {
+      "rank": 85,
+      "feature": "44_tGravityAcc-std()-X",
+      "importance": 0.003095862818781171
+    },
+    {
+      "rank": 86,
+      "feature": "452_fBodyGyro-meanFreq()-X",
+      "importance": 0.0029665065821748993
+    },
+    {
+      "rank": 87,
+      "feature": "433_fBodyGyro-max()-X",
+      "importance": 0.002934492247599243
+    },
+    {
+      "rank": 88,
+      "feature": "275_fBodyAcc-max()-X",
+      "importance": 0.002929991739064783
+    },
+    {
+      "rank": 89,
+      "feature": "40_tBodyAcc-correlation()-Y,Z",
+      "importance": 0.0028922030278102557
+    },
+    {
+      "rank": 90,
+      "feature": "103_tBodyAccJerk-entropy()-X",
+      "importance": 0.00283401315756237
+    },
+    {
+      "rank": 91,
+      "feature": "370_fBodyAccJerk-maxInds-X",
+      "importance": 0.0028096709436869673
+    },
+    {
+      "rank": 92,
+      "feature": "513_fBodyAccMag-meanFreq()",
+      "importance": 0.00278866529234258
+    },
+    {
+      "rank": 93,
+      "feature": "77_tGravityAcc-arCoeff()-Z,4",
+      "importance": 0.0027769612232328837
+    },
+    {
+      "rank": 94,
+      "feature": "235_tBodyAccJerkMag-entropy()",
+      "importance": 0.0027577247136030708
+    },
+    {
+      "rank": 95,
+      "feature": "510_fBodyAccMag-iqr()",
+      "importance": 0.0027154680590532275
+    },
+    {
+      "rank": 96,
+      "feature": "224_tGravityAccMag-arCoeff()2",
+      "importance": 0.0027151605326530825
+    },
+    {
+      "rank": 97,
+      "feature": "137_tBodyGyro-energy()-X",
+      "importance": 0.0027124124509932367
+    },
+    {
+      "rank": 98,
+      "feature": "130_tBodyGyro-max()-X",
+      "importance": 0.002684858206078638
+    },
+    {
+      "rank": 99,
+      "feature": "143_tBodyGyro-entropy()-X",
+      "importance": 0.002665772242928934
+    },
+    {
+      "rank": 100,
+      "feature": "424_fBodyGyro-mean()-X",
+      "importance": 0.002639513809074726
+    },
+    {
+      "rank": 101,
+      "feature": "430_fBodyGyro-mad()-X",
+      "importance": 0.002569646328032403
+    },
+    {
+      "rank": 102,
+      "feature": "89_tBodyAccJerk-mad()-Z",
+      "importance": 0.0025665342414144853
+    },
+    {
+      "rank": 103,
+      "feature": "360_fBodyAccJerk-sma()",
+      "importance": 0.002539854021283429
+    },
+    {
+      "rank": 104,
+      "feature": "516_fBodyBodyAccJerkMag-mean()",
+      "importance": 0.0024778457748936603
+    },
+    {
+      "rank": 105,
+      "feature": "227_tBodyAccJerkMag-mean()",
+      "importance": 0.0024325046521835388
+    },
+    {
+      "rank": 106,
+      "feature": "141_tBodyGyro-iqr()-Y",
+      "importance": 0.0024282178001339503
+    },
+    {
+      "rank": 107,
+      "feature": "217_tGravityAccMag-max()",
+      "importance": 0.0023716652903253295
+    },
+    {
+      "rank": 108,
+      "feature": "368_fBodyAccJerk-entropy()-Y",
+      "importance": 0.002371622892497084
+    },
+    {
+      "rank": 109,
+      "feature": "204_tBodyAccMag-max()",
+      "importance": 0.0023682876630841355
+    },
+    {
+      "rank": 110,
+      "feature": "73_tGravityAcc-arCoeff()-Y,4",
+      "importance": 0.0023635948935270554
+    },
+    {
+      "rank": 111,
+      "feature": "69_tGravityAcc-arCoeff()-X,4",
+      "importance": 0.0023022886821484176
+    },
+    {
+      "rank": 112,
+      "feature": "78_tGravityAcc-correlation()-X,Y",
+      "importance": 0.0022981174862855
+    },
+    {
+      "rank": 113,
+      "feature": "140_tBodyGyro-iqr()-X",
+      "importance": 0.0022825427528310807
+    },
+    {
+      "rank": 114,
+      "feature": "104_tBodyAccJerk-entropy()-Y",
+      "importance": 0.0022782124716922768
+    },
+    {
+      "rank": 115,
+      "feature": "90_tBodyAccJerk-max()-X",
+      "importance": 0.0022619882440568203
+    },
+    {
+      "rank": 116,
+      "feature": "164_tBodyGyroJerk-std()-X",
+      "importance": 0.0022406895754198525
+    },
+    {
+      "rank": 117,
+      "feature": "285_fBodyAcc-iqr()-X",
+      "importance": 0.0021863607048546777
+    },
+    {
+      "rank": 118,
+      "feature": "211_tBodyAccMag-arCoeff()2",
+      "importance": 0.002092627227743925
+    },
+    {
+      "rank": 119,
+      "feature": "127_tBodyGyro-mad()-X",
+      "importance": 0.002066294835032283
+    },
+    {
+      "rank": 120,
+      "feature": "177_tBodyGyroJerk-energy()-X",
+      "importance": 0.0020450301036879213
+    },
+    {
+      "rank": 121,
+      "feature": "133_tBodyGyro-min()-X",
+      "importance": 0.002033279443091331
+    },
+    {
+      "rank": 122,
+      "feature": "160_tBodyGyro-correlation()-Y,Z",
+      "importance": 0.0019649358103918657
+    },
+    {
+      "rank": 123,
+      "feature": "469_fBodyGyro-bandsEnergy()-1,16",
+      "importance": 0.0018716876196948461
+    },
+    {
+      "rank": 124,
+      "feature": "440_fBodyGyro-energy()-X",
+      "importance": 0.0018235283731212173
+    },
+    {
+      "rank": 125,
+      "feature": "446_fBodyGyro-entropy()-X",
+      "importance": 0.001781442457344907
+    },
+    {
+      "rank": 126,
+      "feature": "201_tBodyAccMag-mean()",
+      "importance": 0.0017169042662506053
+    },
+    {
+      "rank": 127,
+      "feature": "473_fBodyGyro-bandsEnergy()-1,24",
+      "importance": 0.0017140186405076067
+    },
+    {
+      "rank": 128,
+      "feature": "462_fBodyGyro-bandsEnergy()-9,16",
+      "importance": 0.0016400287733196717
+    },
+    {
+      "rank": 129,
+      "feature": "47_tGravityAcc-mad()-X",
+      "importance": 0.0016093028870888437
+    },
+    {
+      "rank": 130,
+      "feature": "297_fBodyAcc-skewness()-X",
+      "importance": 0.001505555682807814
+    },
+    {
+      "rank": 131,
+      "feature": "412_fBodyAccJerk-bandsEnergy()-17,24",
+      "importance": 0.0014721673769671473
+    },
+    {
+      "rank": 132,
+      "feature": "124_tBodyGyro-std()-X",
+      "importance": 0.0014659739579880357
+    },
+    {
+      "rank": 133,
+      "feature": "340_fBodyAcc-bandsEnergy()-17,32",
+      "importance": 0.0014547453322339093
+    },
+    {
+      "rank": 134,
+      "feature": "186_tBodyGyroJerk-arCoeff()-X,1",
+      "importance": 0.0014410448247258872
+    },
+    {
+      "rank": 135,
+      "feature": "317_fBodyAcc-bandsEnergy()-1,8",
+      "importance": 0.0014100503132608775
+    },
+    {
+      "rank": 136,
+      "feature": "234_tBodyAccJerkMag-iqr()",
+      "importance": 0.0013932707121160467
+    },
+    {
+      "rank": 137,
+      "feature": "539_fBodyBodyGyroMag-meanFreq()",
+      "importance": 0.0013848993427136383
+    },
+    {
+      "rank": 138,
+      "feature": "450_fBodyGyro-maxInds-Y",
+      "importance": 0.001352868877484553
+    },
+    {
+      "rank": 139,
+      "feature": "39_tBodyAcc-correlation()-X,Z",
+      "importance": 0.0013055015785577917
+    },
+    {
+      "rank": 140,
+      "feature": "23_tBodyAcc-entropy()-X",
+      "importance": 0.001286222196554336
+    },
+    {
+      "rank": 141,
+      "feature": "506_fBodyAccMag-max()",
+      "importance": 0.0012589161473737205
+    },
+    {
+      "rank": 142,
+      "feature": "61_tGravityAcc-iqr()-Y",
+      "importance": 0.0011423015497280405
+    },
+    {
+      "rank": 143,
+      "feature": "167_tBodyGyroJerk-mad()-X",
+      "importance": 0.0011280727961041589
+    },
+    {
+      "rank": 144,
+      "feature": "85_tBodyAccJerk-std()-Y",
+      "importance": 0.0010901397885652506
+    },
+    {
+      "rank": 145,
+      "feature": "159_tBodyGyro-correlation()-X,Z",
+      "importance": 0.0010808134112654094
+    },
+    {
+      "rank": 146,
+      "feature": "405_fBodyAccJerk-bandsEnergy()-17,32",
+      "importance": 0.0010785204386967232
+    },
+    {
+      "rank": 147,
+      "feature": "118_tBodyAccJerk-correlation()-X,Y",
+      "importance": 0.0010710222815655032
+    },
+    {
+      "rank": 148,
+      "feature": "333_fBodyAcc-bandsEnergy()-17,24",
+      "importance": 0.0010342873451731583
+    },
+    {
+      "rank": 149,
+      "feature": "295_fBodyAcc-meanFreq()-Y",
+      "importance": 0.0010337789956289286
+    },
+    {
+      "rank": 150,
+      "feature": "125_tBodyGyro-std()-Y",
+      "importance": 0.0010293957013120156
+    },
+    {
+      "rank": 151,
+      "feature": "142_tBodyGyro-iqr()-Z",
+      "importance": 0.0010153403520753153
+    },
+    {
+      "rank": 152,
+      "feature": "16_tBodyAcc-sma()",
+      "importance": 0.0010069496354221399
+    },
+    {
+      "rank": 153,
+      "feature": "434_fBodyGyro-max()-Y",
+      "importance": 0.0009963506898718357
+    },
+    {
+      "rank": 154,
+      "feature": "220_tGravityAccMag-energy()",
+      "importance": 0.0009923052710156999
+    },
+    {
+      "rank": 155,
+      "feature": "20_tBodyAcc-iqr()-X",
+      "importance": 0.0009823925138836773
+    },
+    {
+      "rank": 156,
+      "feature": "79_tGravityAcc-correlation()-X,Z",
+      "importance": 0.0009760331118076047
+    },
+    {
+      "rank": 157,
+      "feature": "300_fBodyAcc-kurtosis()-Y",
+      "importance": 0.0009465292201589035
+    },
+    {
+      "rank": 158,
+      "feature": "126_tBodyGyro-std()-Z",
+      "importance": 0.0009464746266676569
+    },
+    {
+      "rank": 159,
+      "feature": "60_tGravityAcc-iqr()-X",
+      "importance": 0.0009279399125561762
+    },
+    {
+      "rank": 160,
+      "feature": "228_tBodyAccJerkMag-std()",
+      "importance": 0.0009210941276289401
+    },
+    {
+      "rank": 161,
+      "feature": "208_tBodyAccMag-iqr()",
+      "importance": 0.0009188114572504537
+    },
+    {
+      "rank": 162,
+      "feature": "519_fBodyBodyAccJerkMag-max()",
+      "importance": 0.0008897269747461815
+    },
+    {
+      "rank": 163,
+      "feature": "13_tBodyAcc-min()-X",
+      "importance": 0.0008850128605029151
+    },
+    {
+      "rank": 164,
+      "feature": "435_fBodyGyro-max()-Z",
+      "importance": 0.00087171031997954
+    },
+    {
+      "rank": 165,
+      "feature": "92_tBodyAccJerk-max()-Z",
+      "importance": 0.0008493834396495084
+    },
+    {
+      "rank": 166,
+      "feature": "209_tBodyAccMag-entropy()",
+      "importance": 0.0008456211144054201
+    },
+    {
+      "rank": 167,
+      "feature": "299_fBodyAcc-skewness()-Y",
+      "importance": 0.0008427476022942951
+    },
+    {
+      "rank": 168,
+      "feature": "489_fBodyGyro-bandsEnergy()-1,8",
+      "importance": 0.0008397865097552859
+    },
+    {
+      "rank": 169,
+      "feature": "49_tGravityAcc-mad()-Z",
+      "importance": 0.0008302941529097124
+    },
+    {
+      "rank": 170,
+      "feature": "198_tBodyGyroJerk-correlation()-X,Y",
+      "importance": 0.0008236524663922995
+    },
+    {
+      "rank": 171,
+      "feature": "129_tBodyGyro-mad()-Z",
+      "importance": 0.0008164821523881762
+    },
+    {
+      "rank": 172,
+      "feature": "80_tGravityAcc-correlation()-Y,Z",
+      "importance": 0.0008151319876823279
+    },
+    {
+      "rank": 173,
+      "feature": "419_fBodyAccJerk-bandsEnergy()-17,32",
+      "importance": 0.0008040329709747573
+    },
+    {
+      "rank": 174,
+      "feature": "158_tBodyGyro-correlation()-X,Y",
+      "importance": 0.0008038395783800903
+    },
+    {
+      "rank": 175,
+      "feature": "331_fBodyAcc-bandsEnergy()-1,8",
+      "importance": 0.000802777248384713
+    },
+    {
+      "rank": 176,
+      "feature": "229_tBodyAccJerkMag-mad()",
+      "importance": 0.0007811168715269567
+    },
+    {
+      "rank": 177,
+      "feature": "538_fBodyBodyGyroMag-maxInds",
+      "importance": 0.0007738879921669243
+    },
+    {
+      "rank": 178,
+      "feature": "123_tBodyGyro-mean()-Z",
+      "importance": 0.0007675459170347647
+    },
+    {
+      "rank": 179,
+      "feature": "48_tGravityAcc-mad()-Y",
+      "importance": 0.0007505833483481995
+    },
+    {
+      "rank": 180,
+      "feature": "207_tBodyAccMag-energy()",
+      "importance": 0.0007298787646126841
+    },
+    {
+      "rank": 181,
+      "feature": "457_fBodyGyro-skewness()-Y",
+      "importance": 0.0007289989275927061
+    },
+    {
+      "rank": 182,
+      "feature": "188_tBodyGyroJerk-arCoeff()-X,3",
+      "importance": 0.000727967565148168
+    },
+    {
+      "rank": 183,
+      "feature": "347_fBodyAccJerk-mean()-Z",
+      "importance": 0.0007212477501162769
+    },
+    {
+      "rank": 184,
+      "feature": "459_fBodyGyro-skewness()-Z",
+      "importance": 0.0007149089178953904
+    },
+    {
+      "rank": 185,
+      "feature": "291_fBodyAcc-maxInds-X",
+      "importance": 0.0007047684008540969
+    },
+    {
+      "rank": 186,
+      "feature": "517_fBodyBodyAccJerkMag-std()",
+      "importance": 0.0006978777333547549
+    },
+    {
+      "rank": 187,
+      "feature": "183_tBodyGyroJerk-entropy()-X",
+      "importance": 0.0006841817637234454
+    },
+    {
+      "rank": 188,
+      "feature": "128_tBodyGyro-mad()-Y",
+      "importance": 0.0006622746145312068
+    },
+    {
+      "rank": 189,
+      "feature": "432_fBodyGyro-mad()-Z",
+      "importance": 0.0006577500262554631
+    },
+    {
+      "rank": 190,
+      "feature": "146_tBodyGyro-arCoeff()-X,1",
+      "importance": 0.0006512336401849729
+    },
+    {
+      "rank": 191,
+      "feature": "475_fBodyGyro-bandsEnergy()-1,8",
+      "importance": 0.0006487706956385272
+    },
+    {
+      "rank": 192,
+      "feature": "470_fBodyGyro-bandsEnergy()-17,32",
+      "importance": 0.0006411767216441079
+    },
+    {
+      "rank": 193,
+      "feature": "460_fBodyGyro-kurtosis()-Z",
+      "importance": 0.0006397754445195874
+    },
+    {
+      "rank": 194,
+      "feature": "121_tBodyGyro-mean()-X",
+      "importance": 0.0006379739133985375
+    },
+    {
+      "rank": 195,
+      "feature": "173_tBodyGyroJerk-min()-X",
+      "importance": 0.0006325967770252731
+    },
+    {
+      "rank": 196,
+      "feature": "138_tBodyGyro-energy()-Y",
+      "importance": 0.0006308897073061769
+    },
+    {
+      "rank": 197,
+      "feature": "46_tGravityAcc-std()-Z",
+      "importance": 0.0006264429132743891
+    },
+    {
+      "rank": 198,
+      "feature": "30_tBodyAcc-arCoeff()-Y,1",
+      "importance": 0.0006178849726335782
+    },
+    {
+      "rank": 199,
+      "feature": "65_tGravityAcc-entropy()-Z",
+      "importance": 0.0006117935103381849
+    },
+    {
+      "rank": 200,
+      "feature": "491_fBodyGyro-bandsEnergy()-17,24",
+      "importance": 0.0006090657752671539
+    },
+    {
+      "rank": 201,
+      "feature": "429_fBodyGyro-std()-Z",
+      "importance": 0.0006038743552765576
+    },
+    {
+      "rank": 202,
+      "feature": "458_fBodyGyro-kurtosis()-Y",
+      "importance": 0.0005983412207686245
+    },
+    {
+      "rank": 203,
+      "feature": "339_fBodyAcc-bandsEnergy()-1,16",
+      "importance": 0.0005720524244147839
+    },
+    {
+      "rank": 204,
+      "feature": "465_fBodyGyro-bandsEnergy()-33,40",
+      "importance": 0.0005689477580185412
+    },
+    {
+      "rank": 205,
+      "feature": "483_fBodyGyro-bandsEnergy()-1,16",
+      "importance": 0.0005636396618387882
+    },
+    {
+      "rank": 206,
+      "feature": "19_tBodyAcc-energy()-Z",
+      "importance": 0.0005630543589203988
+    },
+    {
+      "rank": 207,
+      "feature": "18_tBodyAcc-energy()-Y",
+      "importance": 0.0005534488791635032
+    },
+    {
+      "rank": 208,
+      "feature": "21_tBodyAcc-iqr()-Y",
+      "importance": 0.0005477277530654251
+    },
+    {
+      "rank": 209,
+      "feature": "362_fBodyAccJerk-energy()-Y",
+      "importance": 0.0005466267105772026
+    },
+    {
+      "rank": 210,
+      "feature": "369_fBodyAccJerk-entropy()-Z",
+      "importance": 0.0005414141414363694
+    },
+    {
+      "rank": 211,
+      "feature": "179_tBodyGyroJerk-energy()-Z",
+      "importance": 0.000535072328565913
+    },
+    {
+      "rank": 212,
+      "feature": "139_tBodyGyro-energy()-Z",
+      "importance": 0.0005330309659984171
+    },
+    {
+      "rank": 213,
+      "feature": "501_fBodyGyro-bandsEnergy()-1,24",
+      "importance": 0.0005212855392419893
+    },
+    {
+      "rank": 214,
+      "feature": "105_tBodyAccJerk-entropy()-Z",
+      "importance": 0.0005164762664637737
+    },
+    {
+      "rank": 215,
+      "feature": "254_tBodyGyroJerkMag-std()",
+      "importance": 0.0005032701930520318
+    },
+    {
+      "rank": 216,
+      "feature": "431_fBodyGyro-mad()-Y",
+      "importance": 0.0005007518707717847
+    },
+    {
+      "rank": 217,
+      "feature": "442_fBodyGyro-energy()-Z",
+      "importance": 0.0004996417488283528
+    },
+    {
+      "rank": 218,
+      "feature": "410_fBodyAccJerk-bandsEnergy()-1,8",
+      "importance": 0.0004958522887313602
+    },
+    {
+      "rank": 219,
+      "feature": "45_tGravityAcc-std()-Y",
+      "importance": 0.0004929855100261123
+    },
+    {
+      "rank": 220,
+      "feature": "498_fBodyGyro-bandsEnergy()-17,32",
+      "importance": 0.0004919095943212256
+    },
+    {
+      "rank": 221,
+      "feature": "455_fBodyGyro-skewness()-X",
+      "importance": 0.0004905067745349909
+    },
+    {
+      "rank": 222,
+      "feature": "298_fBodyAcc-kurtosis()-X",
+      "importance": 0.0004888812531359964
+    },
+    {
+      "rank": 223,
+      "feature": "277_fBodyAcc-max()-Z",
+      "importance": 0.00048365237543404897
+    },
+    {
+      "rank": 224,
+      "feature": "428_fBodyGyro-std()-Y",
+      "importance": 0.00048077224846173765
+    },
+    {
+      "rank": 225,
+      "feature": "425_fBodyGyro-mean()-Y",
+      "importance": 0.000477497926778314
+    },
+    {
+      "rank": 226,
+      "feature": "6_tBodyAcc-std()-Z",
+      "importance": 0.00047076092543536373
+    },
+    {
+      "rank": 227,
+      "feature": "466_fBodyGyro-bandsEnergy()-41,48",
+      "importance": 0.0004692919454318909
+    },
+    {
+      "rank": 228,
+      "feature": "276_fBodyAcc-max()-Y",
+      "importance": 0.0004636035236367913
+    },
+    {
+      "rank": 229,
+      "feature": "530_fBodyBodyGyroMag-std()",
+      "importance": 0.0004633436315020548
+    },
+    {
+      "rank": 230,
+      "feature": "408_fBodyAccJerk-bandsEnergy()-1,24",
+      "importance": 0.0004592714282525485
+    },
+    {
+      "rank": 231,
+      "feature": "527_fBodyBodyAccJerkMag-skewness()",
+      "importance": 0.0004573286128358219
+    },
+    {
+      "rank": 232,
+      "feature": "454_fBodyGyro-meanFreq()-Z",
+      "importance": 0.00045532311376346636
+    },
+    {
+      "rank": 233,
+      "feature": "426_fBodyGyro-mean()-Z",
+      "importance": 0.00044822824934154134
+    },
+    {
+      "rank": 234,
+      "feature": "329_fBodyAcc-bandsEnergy()-1,24",
+      "importance": 0.00044818868860237323
+    },
+    {
+      "rank": 235,
+      "feature": "170_tBodyGyroJerk-max()-X",
+      "importance": 0.0004438276232639993
+    },
+    {
+      "rank": 236,
+      "feature": "318_fBodyAcc-bandsEnergy()-9,16",
+      "importance": 0.00044055026701039004
+    },
+    {
+      "rank": 237,
+      "feature": "490_fBodyGyro-bandsEnergy()-9,16",
+      "importance": 0.0004312769886655852
+    },
+    {
+      "rank": 238,
+      "feature": "199_tBodyGyroJerk-correlation()-X,Z",
+      "importance": 0.00042763059896627634
+    },
+    {
+      "rank": 239,
+      "feature": "171_tBodyGyroJerk-max()-Y",
+      "importance": 0.0004167115327256604
+    },
+    {
+      "rank": 240,
+      "feature": "557_angle(tBodyGyroMean,gravityMean)",
+      "importance": 0.00040452493259773045
+    },
+    {
+      "rank": 241,
+      "feature": "87_tBodyAccJerk-mad()-X",
+      "importance": 0.0004042840458395007
+    },
+    {
+      "rank": 242,
+      "feature": "319_fBodyAcc-bandsEnergy()-17,24",
+      "importance": 0.0004028041100236625
+    },
+    {
+      "rank": 243,
+      "feature": "492_fBodyGyro-bandsEnergy()-25,32",
+      "importance": 0.0004005000114747695
+    },
+    {
+      "rank": 244,
+      "feature": "93_tBodyAccJerk-min()-X",
+      "importance": 0.0003999571461319179
+    },
+    {
+      "rank": 245,
+      "feature": "554_fBodyBodyGyroJerkMag-kurtosis()",
+      "importance": 0.0003975070014280208
+    },
+    {
+      "rank": 246,
+      "feature": "420_fBodyAccJerk-bandsEnergy()-33,48",
+      "importance": 0.000395879719188535
+    },
+    {
+      "rank": 247,
+      "feature": "271_fBodyAcc-std()-Z",
+      "importance": 0.0003919686952369638
+    },
+    {
+      "rank": 248,
+      "feature": "150_tBodyGyro-arCoeff()-Y,1",
+      "importance": 0.0003911730459735747
+    },
+    {
+      "rank": 249,
+      "feature": "270_fBodyAcc-std()-Y",
+      "importance": 0.00038940335011580513
+    },
+    {
+      "rank": 250,
+      "feature": "500_fBodyGyro-bandsEnergy()-49,64",
+      "importance": 0.0003875546554643567
+    },
+    {
+      "rank": 251,
+      "feature": "444_fBodyGyro-iqr()-Y",
+      "importance": 0.00038579824742247505
+    },
+    {
+      "rank": 252,
+      "feature": "484_fBodyGyro-bandsEnergy()-17,32",
+      "importance": 0.00038543491793540627
+    },
+    {
+      "rank": 253,
+      "feature": "343_fBodyAcc-bandsEnergy()-1,24",
+      "importance": 0.00038377894612167643
+    },
+    {
+      "rank": 254,
+      "feature": "545_fBodyBodyGyroJerkMag-max()",
+      "importance": 0.0003829316736879173
+    },
+    {
+      "rank": 255,
+      "feature": "98_tBodyAccJerk-energy()-Y",
+      "importance": 0.00038071471737931664
+    },
+    {
+      "rank": 256,
+      "feature": "166_tBodyGyroJerk-std()-Z",
+      "importance": 0.0003789912074419952
+    },
+    {
+      "rank": 257,
+      "feature": "255_tBodyGyroJerkMag-mad()",
+      "importance": 0.0003789195232897532
+    },
+    {
+      "rank": 258,
+      "feature": "478_fBodyGyro-bandsEnergy()-25,32",
+      "importance": 0.00037590463881661027
+    },
+    {
+      "rank": 259,
+      "feature": "456_fBodyGyro-kurtosis()-X",
+      "importance": 0.00037584225700553744
+    },
+    {
+      "rank": 260,
+      "feature": "471_fBodyGyro-bandsEnergy()-33,48",
+      "importance": 0.0003734843640333542
+    },
+    {
+      "rank": 261,
+      "feature": "8_tBodyAcc-mad()-Y",
+      "importance": 0.000372498911926275
+    },
+    {
+      "rank": 262,
+      "feature": "95_tBodyAccJerk-min()-Z",
+      "importance": 0.0003722668628927139
+    },
+    {
+      "rank": 263,
+      "feature": "497_fBodyGyro-bandsEnergy()-1,16",
+      "importance": 0.00037199009392621234
+    },
+    {
+      "rank": 264,
+      "feature": "86_tBodyAccJerk-std()-Z",
+      "importance": 0.0003709275496226753
+    },
+    {
+      "rank": 265,
+      "feature": "423_fBodyAccJerk-bandsEnergy()-25,48",
+      "importance": 0.0003692495121719394
+    },
+    {
+      "rank": 266,
+      "feature": "334_fBodyAcc-bandsEnergy()-25,32",
+      "importance": 0.0003683661988232083
+    },
+    {
+      "rank": 267,
+      "feature": "496_fBodyGyro-bandsEnergy()-57,64",
+      "importance": 0.0003665237957485036
+    },
+    {
+      "rank": 268,
+      "feature": "477_fBodyGyro-bandsEnergy()-17,24",
+      "importance": 0.00036406343876258185
+    },
+    {
+      "rank": 269,
+      "feature": "441_fBodyGyro-energy()-Y",
+      "importance": 0.00035884504043936035
+    },
+    {
+      "rank": 270,
+      "feature": "149_tBodyGyro-arCoeff()-X,4",
+      "importance": 0.00035719954341371853
+    },
+    {
+      "rank": 271,
+      "feature": "436_fBodyGyro-min()-X",
+      "importance": 0.00035588909601528347
+    },
+    {
+      "rank": 272,
+      "feature": "487_fBodyGyro-bandsEnergy()-1,24",
+      "importance": 0.00035500796445883236
+    },
+    {
+      "rank": 273,
+      "feature": "99_tBodyAccJerk-energy()-Z",
+      "importance": 0.0003537757560998732
+    },
+    {
+      "rank": 274,
+      "feature": "529_fBodyBodyGyroMag-mean()",
+      "importance": 0.0003528461580808861
+    },
+    {
+      "rank": 275,
+      "feature": "447_fBodyGyro-entropy()-Y",
+      "importance": 0.0003516564285839859
+    },
+    {
+      "rank": 276,
+      "feature": "145_tBodyGyro-entropy()-Z",
+      "importance": 0.00034588880579011495
+    },
+    {
+      "rank": 277,
+      "feature": "349_fBodyAccJerk-std()-Y",
+      "importance": 0.00034573307824347976
+    },
+    {
+      "rank": 278,
+      "feature": "499_fBodyGyro-bandsEnergy()-33,48",
+      "importance": 0.00034098439516291103
+    },
+    {
+      "rank": 279,
+      "feature": "398_fBodyAccJerk-bandsEnergy()-17,24",
+      "importance": 0.00033954884253054106
+    },
+    {
+      "rank": 280,
+      "feature": "488_fBodyGyro-bandsEnergy()-25,48",
+      "importance": 0.0003372894544606126
+    },
+    {
+      "rank": 281,
+      "feature": "397_fBodyAccJerk-bandsEnergy()-9,16",
+      "importance": 0.0003366017359824604
+    },
+    {
+      "rank": 282,
+      "feature": "518_fBodyBodyAccJerkMag-mad()",
+      "importance": 0.0003365757719761957
+    },
+    {
+      "rank": 283,
+      "feature": "163_tBodyGyroJerk-mean()-Z",
+      "importance": 0.00033594434608412145
+    },
+    {
+      "rank": 284,
+      "feature": "344_fBodyAcc-bandsEnergy()-25,48",
+      "importance": 0.00033490844788885114
+    },
+    {
+      "rank": 285,
+      "feature": "135_tBodyGyro-min()-Z",
+      "importance": 0.00033233141823694383
+    },
+    {
+      "rank": 286,
+      "feature": "5_tBodyAcc-std()-Y",
+      "importance": 0.0003321859664868391
+    },
+    {
+      "rank": 287,
+      "feature": "418_fBodyAccJerk-bandsEnergy()-1,16",
+      "importance": 0.0003318249402728511
+    },
+    {
+      "rank": 288,
+      "feature": "502_fBodyGyro-bandsEnergy()-25,48",
+      "importance": 0.00032688544987571026
+    },
+    {
+      "rank": 289,
+      "feature": "512_fBodyAccMag-maxInds",
+      "importance": 0.0003253564977466206
+    },
+    {
+      "rank": 290,
+      "feature": "281_fBodyAcc-sma()",
+      "importance": 0.0003228507600687177
+    },
+    {
+      "rank": 291,
+      "feature": "249_tBodyGyroMag-arCoeff()1",
+      "importance": 0.0003204664776528198
+    },
+    {
+      "rank": 292,
+      "feature": "122_tBodyGyro-mean()-Y",
+      "importance": 0.0003197735551802107
+    },
+    {
+      "rank": 293,
+      "feature": "157_tBodyGyro-arCoeff()-Z,4",
+      "importance": 0.00031714140259152636
+    },
+    {
+      "rank": 294,
+      "feature": "522_fBodyBodyAccJerkMag-energy()",
+      "importance": 0.0003164406654486425
+    },
+    {
+      "rank": 295,
+      "feature": "292_fBodyAcc-maxInds-Y",
+      "importance": 0.00031605242062447523
+    },
+    {
+      "rank": 296,
+      "feature": "120_tBodyAccJerk-correlation()-Y,Z",
+      "importance": 0.0003150614409524335
+    },
+    {
+      "rank": 297,
+      "feature": "558_angle(tBodyGyroJerkMean,gravityMean)",
+      "importance": 0.00031119603535527515
+    },
+    {
+      "rank": 298,
+      "feature": "109_tBodyAccJerk-arCoeff()-X,4",
+      "importance": 0.0003102239097979746
+    },
+    {
+      "rank": 299,
+      "feature": "439_fBodyGyro-sma()",
+      "importance": 0.0003097322562137598
+    },
+    {
+      "rank": 300,
+      "feature": "144_tBodyGyro-entropy()-Y",
+      "importance": 0.00030555166221296333
+    },
+    {
+      "rank": 301,
+      "feature": "445_fBodyGyro-iqr()-Z",
+      "importance": 0.00030468245722846854
+    },
+    {
+      "rank": 302,
+      "feature": "200_tBodyGyroJerk-correlation()-Y,Z",
+      "importance": 0.0003022841710686162
+    },
+    {
+      "rank": 303,
+      "feature": "366_fBodyAccJerk-iqr()-Z",
+      "importance": 0.00030008796581250044
+    },
+    {
+      "rank": 304,
+      "feature": "301_fBodyAcc-skewness()-Z",
+      "importance": 0.0002997163006369625
+    },
+    {
+      "rank": 305,
+      "feature": "206_tBodyAccMag-sma()",
+      "importance": 0.0002994291523914601
+    },
+    {
+      "rank": 306,
+      "feature": "411_fBodyAccJerk-bandsEnergy()-9,16",
+      "importance": 0.0002989890002058689
+    },
+    {
+      "rank": 307,
+      "feature": "165_tBodyGyroJerk-std()-Y",
+      "importance": 0.00029893010745168566
+    },
+    {
+      "rank": 308,
+      "feature": "521_fBodyBodyAccJerkMag-sma()",
+      "importance": 0.0002988271623752744
+    },
+    {
+      "rank": 309,
+      "feature": "553_fBodyBodyGyroJerkMag-skewness()",
+      "importance": 0.00029575966219032735
+    },
+    {
+      "rank": 310,
+      "feature": "172_tBodyGyroJerk-max()-Z",
+      "importance": 0.0002928930287595514
+    },
+    {
+      "rank": 311,
+      "feature": "375_fBodyAccJerk-meanFreq()-Z",
+      "importance": 0.0002911720163300565
+    },
+    {
+      "rank": 312,
+      "feature": "535_fBodyBodyGyroMag-energy()",
+      "importance": 0.00028725916921052726
+    },
+    {
+      "rank": 313,
+      "feature": "413_fBodyAccJerk-bandsEnergy()-25,32",
+      "importance": 0.00028636575946120927
+    },
+    {
+      "rank": 314,
+      "feature": "259_tBodyGyroJerkMag-energy()",
+      "importance": 0.00028209790392157505
+    },
+    {
+      "rank": 315,
+      "feature": "385_fBodyAccJerk-bandsEnergy()-25,32",
+      "importance": 0.0002809697663295327
+    },
+    {
+      "rank": 316,
+      "feature": "247_tBodyGyroMag-iqr()",
+      "importance": 0.0002806549754718365
+    },
+    {
+      "rank": 317,
+      "feature": "244_tBodyGyroMag-min()",
+      "importance": 0.00028017639496317174
+    },
+    {
+      "rank": 318,
+      "feature": "448_fBodyGyro-entropy()-Z",
+      "importance": 0.00027947342793536604
+    },
+    {
+      "rank": 319,
+      "feature": "132_tBodyGyro-max()-Z",
+      "importance": 0.00027703214115300153
+    },
+    {
+      "rank": 320,
+      "feature": "187_tBodyGyroJerk-arCoeff()-X,2",
+      "importance": 0.00027617465758930914
+    },
+    {
+      "rank": 321,
+      "feature": "350_fBodyAccJerk-std()-Z",
+      "importance": 0.00027608205723232763
+    },
+    {
+      "rank": 322,
+      "feature": "273_fBodyAcc-mad()-Y",
+      "importance": 0.0002737139007964557
+    },
+    {
+      "rank": 323,
+      "feature": "363_fBodyAccJerk-energy()-Z",
+      "importance": 0.0002712144743562273
+    },
+    {
+      "rank": 324,
+      "feature": "494_fBodyGyro-bandsEnergy()-41,48",
+      "importance": 0.00026992779624834834
+    },
+    {
+      "rank": 325,
+      "feature": "22_tBodyAcc-iqr()-Z",
+      "importance": 0.0002699232430792259
+    },
+    {
+      "rank": 326,
+      "feature": "258_tBodyGyroJerkMag-sma()",
+      "importance": 0.0002681539749469328
+    },
+    {
+      "rank": 327,
+      "feature": "9_tBodyAcc-mad()-Z",
+      "importance": 0.00026754547733371
+    },
+    {
+      "rank": 328,
+      "feature": "289_fBodyAcc-entropy()-Y",
+      "importance": 0.0002657284125416577
+    },
+    {
+      "rank": 329,
+      "feature": "241_tBodyGyroMag-std()",
+      "importance": 0.0002655980084723114
+    },
+    {
+      "rank": 330,
+      "feature": "245_tBodyGyroMag-sma()",
+      "importance": 0.0002652795349122741
+    },
+    {
+      "rank": 331,
+      "feature": "294_fBodyAcc-meanFreq()-X",
+      "importance": 0.00026441981783484315
+    },
+    {
+      "rank": 332,
+      "feature": "15_tBodyAcc-min()-Z",
+      "importance": 0.0002641983230680743
+    },
+    {
+      "rank": 333,
+      "feature": "197_tBodyGyroJerk-arCoeff()-Z,4",
+      "importance": 0.0002632082448555013
+    },
+    {
+      "rank": 334,
+      "feature": "414_fBodyAccJerk-bandsEnergy()-33,40",
+      "importance": 0.0002628781847137881
+    },
+    {
+      "rank": 335,
+      "feature": "119_tBodyAccJerk-correlation()-X,Z",
+      "importance": 0.00026250801932578625
+    },
+    {
+      "rank": 336,
+      "feature": "395_fBodyAccJerk-bandsEnergy()-25,48",
+      "importance": 0.0002621793203792966
+    },
+    {
+      "rank": 337,
+      "feature": "248_tBodyGyroMag-entropy()",
+      "importance": 0.00026168548723878366
+    },
+    {
+      "rank": 338,
+      "feature": "174_tBodyGyroJerk-min()-Y",
+      "importance": 0.0002586954126385213
+    },
+    {
+      "rank": 339,
+      "feature": "117_tBodyAccJerk-arCoeff()-Z,4",
+      "importance": 0.00025777271231615953
+    },
+    {
+      "rank": 340,
+      "feature": "161_tBodyGyroJerk-mean()-X",
+      "importance": 0.0002562668732088335
+    },
+    {
+      "rank": 341,
+      "feature": "222_tGravityAccMag-entropy()",
+      "importance": 0.00025209140649298323
+    },
+    {
+      "rank": 342,
+      "feature": "214_tGravityAccMag-mean()",
+      "importance": 0.00025166782597573737
+    },
+    {
+      "rank": 343,
+      "feature": "62_tGravityAcc-iqr()-Z",
+      "importance": 0.00025134698469162197
+    },
+    {
+      "rank": 344,
+      "feature": "168_tBodyGyroJerk-mad()-Y",
+      "importance": 0.0002502008966478499
+    },
+    {
+      "rank": 345,
+      "feature": "131_tBodyGyro-max()-Y",
+      "importance": 0.0002499843107856449
+    },
+    {
+      "rank": 346,
+      "feature": "332_fBodyAcc-bandsEnergy()-9,16",
+      "importance": 0.00024927233841350445
+    },
+    {
+      "rank": 347,
+      "feature": "422_fBodyAccJerk-bandsEnergy()-1,24",
+      "importance": 0.0002484185651888874
+    },
+    {
+      "rank": 348,
+      "feature": "151_tBodyGyro-arCoeff()-Y,2",
+      "importance": 0.0002471979213489725
+    },
+    {
+      "rank": 349,
+      "feature": "175_tBodyGyroJerk-min()-Z",
+      "importance": 0.00024689122825923996
+    },
+    {
+      "rank": 350,
+      "feature": "378_fBodyAccJerk-skewness()-Y",
+      "importance": 0.00024633911816088623
+    },
+    {
+      "rank": 351,
+      "feature": "330_fBodyAcc-bandsEnergy()-25,48",
+      "importance": 0.00024617182293818
+    },
+    {
+      "rank": 352,
+      "feature": "391_fBodyAccJerk-bandsEnergy()-17,32",
+      "importance": 0.0002457049860898274
+    },
+    {
+      "rank": 353,
+      "feature": "438_fBodyGyro-min()-Z",
+      "importance": 0.0002453467962194143
+    },
+    {
+      "rank": 354,
+      "feature": "409_fBodyAccJerk-bandsEnergy()-25,48",
+      "importance": 0.00024441909629939365
+    },
+    {
+      "rank": 355,
+      "feature": "352_fBodyAccJerk-mad()-Y",
+      "importance": 0.00023900419768062894
+    },
+    {
+      "rank": 356,
+      "feature": "260_tBodyGyroJerkMag-iqr()",
+      "importance": 0.00023806667835018252
+    },
+    {
+      "rank": 357,
+      "feature": "453_fBodyGyro-meanFreq()-Y",
+      "importance": 0.0002376714945432131
+    },
+    {
+      "rank": 358,
+      "feature": "185_tBodyGyroJerk-entropy()-Z",
+      "importance": 0.00023488413372523868
+    },
+    {
+      "rank": 359,
+      "feature": "178_tBodyGyroJerk-energy()-Y",
+      "importance": 0.0002348199167107151
+    },
+    {
+      "rank": 360,
+      "feature": "353_fBodyAccJerk-mad()-Z",
+      "importance": 0.00023481814385444585
+    },
+    {
+      "rank": 361,
+      "feature": "534_fBodyBodyGyroMag-sma()",
+      "importance": 0.00023345758060454907
+    },
+    {
+      "rank": 362,
+      "feature": "302_fBodyAcc-kurtosis()-Z",
+      "importance": 0.00023274401027217773
+    },
+    {
+      "rank": 363,
+      "feature": "495_fBodyGyro-bandsEnergy()-49,56",
+      "importance": 0.00022968312463444751
+    },
+    {
+      "rank": 364,
+      "feature": "528_fBodyBodyAccJerkMag-kurtosis()",
+      "importance": 0.00022901932705791372
+    },
+    {
+      "rank": 365,
+      "feature": "305_fBodyAcc-bandsEnergy()-17,24",
+      "importance": 0.00022901286312529192
+    },
+    {
+      "rank": 366,
+      "feature": "326_fBodyAcc-bandsEnergy()-17,32",
+      "importance": 0.00022855454523197912
+    },
+    {
+      "rank": 367,
+      "feature": "153_tBodyGyro-arCoeff()-Y,4",
+      "importance": 0.00022807240415747778
+    },
+    {
+      "rank": 368,
+      "feature": "474_fBodyGyro-bandsEnergy()-25,48",
+      "importance": 0.00022806245025377208
+    },
+    {
+      "rank": 369,
+      "feature": "114_tBodyAccJerk-arCoeff()-Z,1",
+      "importance": 0.00022476668360477071
+    },
+    {
+      "rank": 370,
+      "feature": "544_fBodyBodyGyroJerkMag-mad()",
+      "importance": 0.0002241468914798246
+    },
+    {
+      "rank": 371,
+      "feature": "91_tBodyAccJerk-max()-Y",
+      "importance": 0.0002238832639829962
+    },
+    {
+      "rank": 372,
+      "feature": "267_fBodyAcc-mean()-Y",
+      "importance": 0.00022264060132506697
+    },
+    {
+      "rank": 373,
+      "feature": "284_fBodyAcc-energy()-Z",
+      "importance": 0.0002220977861278411
+    },
+    {
+      "rank": 374,
+      "feature": "552_fBodyBodyGyroJerkMag-meanFreq()",
+      "importance": 0.00022106021510684865
+    },
+    {
+      "rank": 375,
+      "feature": "335_fBodyAcc-bandsEnergy()-33,40",
+      "importance": 0.0002203968400558169
+    },
+    {
+      "rank": 376,
+      "feature": "514_fBodyAccMag-skewness()",
+      "importance": 0.00022030201156307043
+    },
+    {
+      "rank": 377,
+      "feature": "543_fBodyBodyGyroJerkMag-std()",
+      "importance": 0.00021958627405087587
+    },
+    {
+      "rank": 378,
+      "feature": "463_fBodyGyro-bandsEnergy()-17,24",
+      "importance": 0.0002172088961874649
+    },
+    {
+      "rank": 379,
+      "feature": "102_tBodyAccJerk-iqr()-Z",
+      "importance": 0.00021648571617306932
+    },
+    {
+      "rank": 380,
+      "feature": "1_tBodyAcc-mean()-X",
+      "importance": 0.0002150381461641176
+    },
+    {
+      "rank": 381,
+      "feature": "106_tBodyAccJerk-arCoeff()-X,1",
+      "importance": 0.000214958340166981
+    },
+    {
+      "rank": 382,
+      "feature": "25_tBodyAcc-entropy()-Z",
+      "importance": 0.0002143940732763828
+    },
+    {
+      "rank": 383,
+      "feature": "263_tBodyGyroJerkMag-arCoeff()2",
+      "importance": 0.00021376731799490606
+    },
+    {
+      "rank": 384,
+      "feature": "219_tGravityAccMag-sma()",
+      "importance": 0.00021252159321433277
+    },
+    {
+      "rank": 385,
+      "feature": "548_fBodyBodyGyroJerkMag-energy()",
+      "importance": 0.00021066398521464588
+    },
+    {
+      "rank": 386,
+      "feature": "116_tBodyAccJerk-arCoeff()-Z,3",
+      "importance": 0.00021025528849727036
+    },
+    {
+      "rank": 387,
+      "feature": "356_fBodyAccJerk-max()-Z",
+      "importance": 0.00021020798553979099
+    },
+    {
+      "rank": 388,
+      "feature": "11_tBodyAcc-max()-Y",
+      "importance": 0.00020901317403300732
+    },
+    {
+      "rank": 389,
+      "feature": "336_fBodyAcc-bandsEnergy()-41,48",
+      "importance": 0.0002077168247649124
+    },
+    {
+      "rank": 390,
+      "feature": "493_fBodyGyro-bandsEnergy()-33,40",
+      "importance": 0.0002074497687055166
+    },
+    {
+      "rank": 391,
+      "feature": "24_tBodyAcc-entropy()-Y",
+      "importance": 0.00020497684503711702
+    },
+    {
+      "rank": 392,
+      "feature": "37_tBodyAcc-arCoeff()-Z,4",
+      "importance": 0.00020439459072157094
+    },
+    {
+      "rank": 393,
+      "feature": "195_tBodyGyroJerk-arCoeff()-Z,2",
+      "importance": 0.00019948286434400117
+    },
+    {
+      "rank": 394,
+      "feature": "274_fBodyAcc-mad()-Z",
+      "importance": 0.00019835728575658753
+    },
+    {
+      "rank": 395,
+      "feature": "221_tGravityAccMag-iqr()",
+      "importance": 0.00019808078068850614
+    },
+    {
+      "rank": 396,
+      "feature": "268_fBodyAcc-mean()-Z",
+      "importance": 0.00019604078235996737
+    },
+    {
+      "rank": 397,
+      "feature": "467_fBodyGyro-bandsEnergy()-49,56",
+      "importance": 0.00019563456639664522
+    },
+    {
+      "rank": 398,
+      "feature": "381_fBodyAccJerk-kurtosis()-Z",
+      "importance": 0.0001948705127602693
+    },
+    {
+      "rank": 399,
+      "feature": "190_tBodyGyroJerk-arCoeff()-Y,1",
+      "importance": 0.0001932575496747552
+    },
+    {
+      "rank": 400,
+      "feature": "476_fBodyGyro-bandsEnergy()-9,16",
+      "importance": 0.00019178680269027096
+    },
+    {
+      "rank": 401,
+      "feature": "243_tBodyGyroMag-max()",
+      "importance": 0.00019138398721355043
+    },
+    {
+      "rank": 402,
+      "feature": "316_fBodyAcc-bandsEnergy()-25,48",
+      "importance": 0.00018844111111780131
+    },
+    {
+      "rank": 403,
+      "feature": "252_tBodyGyroMag-arCoeff()4",
+      "importance": 0.00018832348718888936
+    },
+    {
+      "rank": 404,
+      "feature": "396_fBodyAccJerk-bandsEnergy()-1,8",
+      "importance": 0.00018617512054787744
+    },
+    {
+      "rank": 405,
+      "feature": "443_fBodyGyro-iqr()-X",
+      "importance": 0.0001857435647095068
+    },
+    {
+      "rank": 406,
+      "feature": "230_tBodyAccJerkMag-max()",
+      "importance": 0.00018520705519151206
+    },
+    {
+      "rank": 407,
+      "feature": "384_fBodyAccJerk-bandsEnergy()-17,24",
+      "importance": 0.00018497860931111456
+    },
+    {
+      "rank": 408,
+      "feature": "400_fBodyAccJerk-bandsEnergy()-33,40",
+      "importance": 0.00018452181493377716
+    },
+    {
+      "rank": 409,
+      "feature": "380_fBodyAccJerk-skewness()-Z",
+      "importance": 0.00018426253988264887
+    },
+    {
+      "rank": 410,
+      "feature": "547_fBodyBodyGyroJerkMag-sma()",
+      "importance": 0.00018136619669189923
+    },
+    {
+      "rank": 411,
+      "feature": "257_tBodyGyroJerkMag-min()",
+      "importance": 0.00018111273069291666
+    },
+    {
+      "rank": 412,
+      "feature": "181_tBodyGyroJerk-iqr()-Y",
+      "importance": 0.00018090310107190166
+    },
+    {
+      "rank": 413,
+      "feature": "536_fBodyBodyGyroMag-iqr()",
+      "importance": 0.00017954800690039117
+    },
+    {
+      "rank": 414,
+      "feature": "191_tBodyGyroJerk-arCoeff()-Y,2",
+      "importance": 0.00017914948300936856
+    },
+    {
+      "rank": 415,
+      "feature": "265_tBodyGyroJerkMag-arCoeff()4",
+      "importance": 0.00017640393031171208
+    },
+    {
+      "rank": 416,
+      "feature": "313_fBodyAcc-bandsEnergy()-33,48",
+      "importance": 0.00017483578119383992
+    },
+    {
+      "rank": 417,
+      "feature": "12_tBodyAcc-max()-Z",
+      "importance": 0.00017399778720299662
+    },
+    {
+      "rank": 418,
+      "feature": "415_fBodyAccJerk-bandsEnergy()-41,48",
+      "importance": 0.0001737136024210114
+    },
+    {
+      "rank": 419,
+      "feature": "533_fBodyBodyGyroMag-min()",
+      "importance": 0.0001719709909625227
+    },
+    {
+      "rank": 420,
+      "feature": "14_tBodyAcc-min()-Y",
+      "importance": 0.00017109279225366225
+    },
+    {
+      "rank": 421,
+      "feature": "379_fBodyAccJerk-kurtosis()-Y",
+      "importance": 0.00017039764402077405
+    },
+    {
+      "rank": 422,
+      "feature": "312_fBodyAcc-bandsEnergy()-17,32",
+      "importance": 0.00017001420261392633
+    },
+    {
+      "rank": 423,
+      "feature": "486_fBodyGyro-bandsEnergy()-49,64",
+      "importance": 0.00016984789029298757
+    },
+    {
+      "rank": 424,
+      "feature": "189_tBodyGyroJerk-arCoeff()-X,4",
+      "importance": 0.00016914207395109313
+    },
+    {
+      "rank": 425,
+      "feature": "113_tBodyAccJerk-arCoeff()-Y,4",
+      "importance": 0.00016891103463621384
+    },
+    {
+      "rank": 426,
+      "feature": "184_tBodyGyroJerk-entropy()-Y",
+      "importance": 0.00016647793284523132
+    },
+    {
+      "rank": 427,
+      "feature": "236_tBodyAccJerkMag-arCoeff()1",
+      "importance": 0.00016465104475058625
+    },
+    {
+      "rank": 428,
+      "feature": "468_fBodyGyro-bandsEnergy()-57,64",
+      "importance": 0.00016384209161450668
+    },
+    {
+      "rank": 429,
+      "feature": "479_fBodyGyro-bandsEnergy()-33,40",
+      "importance": 0.0001638314975494901
+    },
+    {
+      "rank": 430,
+      "feature": "325_fBodyAcc-bandsEnergy()-1,16",
+      "importance": 0.00016276113104527243
+    },
+    {
+      "rank": 431,
+      "feature": "307_fBodyAcc-bandsEnergy()-33,40",
+      "importance": 0.0001614589835612525
+    },
+    {
+      "rank": 432,
+      "feature": "261_tBodyGyroJerkMag-entropy()",
+      "importance": 0.00015974250583766992
+    },
+    {
+      "rank": 433,
+      "feature": "148_tBodyGyro-arCoeff()-X,3",
+      "importance": 0.00015826213677223912
+    },
+    {
+      "rank": 434,
+      "feature": "472_fBodyGyro-bandsEnergy()-49,64",
+      "importance": 0.00015799283971724864
+    },
+    {
+      "rank": 435,
+      "feature": "108_tBodyAccJerk-arCoeff()-X,3",
+      "importance": 0.00015793451613380205
+    },
+    {
+      "rank": 436,
+      "feature": "26_tBodyAcc-arCoeff()-X,1",
+      "importance": 0.0001570653495560996
+    },
+    {
+      "rank": 437,
+      "feature": "531_fBodyBodyGyroMag-mad()",
+      "importance": 0.0001567899129163968
+    },
+    {
+      "rank": 438,
+      "feature": "532_fBodyBodyGyroMag-max()",
+      "importance": 0.0001548355111932662
+    },
+    {
+      "rank": 439,
+      "feature": "287_fBodyAcc-iqr()-Z",
+      "importance": 0.0001541012498052462
+    },
+    {
+      "rank": 440,
+      "feature": "309_fBodyAcc-bandsEnergy()-49,56",
+      "importance": 0.0001523573075047895
+    },
+    {
+      "rank": 441,
+      "feature": "156_tBodyGyro-arCoeff()-Z,3",
+      "importance": 0.00015199789732400743
+    },
+    {
+      "rank": 442,
+      "feature": "376_fBodyAccJerk-skewness()-X",
+      "importance": 0.00015146762975067957
+    },
+    {
+      "rank": 443,
+      "feature": "193_tBodyGyroJerk-arCoeff()-Y,4",
+      "importance": 0.00015131539169251955
+    },
+    {
+      "rank": 444,
+      "feature": "290_fBodyAcc-entropy()-Z",
+      "importance": 0.0001502785340834698
+    },
+    {
+      "rank": 445,
+      "feature": "283_fBodyAcc-energy()-Y",
+      "importance": 0.0001492099649561489
+    },
+    {
+      "rank": 446,
+      "feature": "110_tBodyAccJerk-arCoeff()-Y,1",
+      "importance": 0.0001489949826498916
+    },
+    {
+      "rank": 447,
+      "feature": "364_fBodyAccJerk-iqr()-X",
+      "importance": 0.00014710850418782
+    },
+    {
+      "rank": 448,
+      "feature": "239_tBodyAccJerkMag-arCoeff()4",
+      "importance": 0.00014679163073075328
+    },
+    {
+      "rank": 449,
+      "feature": "374_fBodyAccJerk-meanFreq()-Y",
+      "importance": 0.00014594338512973734
+    },
+    {
+      "rank": 450,
+      "feature": "240_tBodyGyroMag-mean()",
+      "importance": 0.00014582907367699638
+    },
+    {
+      "rank": 451,
+      "feature": "27_tBodyAcc-arCoeff()-X,2",
+      "importance": 0.00014556888787310425
+    },
+    {
+      "rank": 452,
+      "feature": "136_tBodyGyro-sma()",
+      "importance": 0.00014546838791612725
+    },
+    {
+      "rank": 453,
+      "feature": "373_fBodyAccJerk-meanFreq()-X",
+      "importance": 0.00014393050090812955
+    },
+    {
+      "rank": 454,
+      "feature": "337_fBodyAcc-bandsEnergy()-49,56",
+      "importance": 0.00014392981268578517
+    },
+    {
+      "rank": 455,
+      "feature": "365_fBodyAccJerk-iqr()-Y",
+      "importance": 0.0001434328620887914
+    },
+    {
+      "rank": 456,
+      "feature": "251_tBodyGyroMag-arCoeff()3",
+      "importance": 0.00014299050298163796
+    },
+    {
+      "rank": 457,
+      "feature": "194_tBodyGyroJerk-arCoeff()-Z,1",
+      "importance": 0.0001427770071155467
+    },
+    {
+      "rank": 458,
+      "feature": "147_tBodyGyro-arCoeff()-X,2",
+      "importance": 0.00014143907295200204
+    },
+    {
+      "rank": 459,
+      "feature": "542_fBodyBodyGyroJerkMag-mean()",
+      "importance": 0.00014133663534159684
+    },
+    {
+      "rank": 460,
+      "feature": "3_tBodyAcc-mean()-Z",
+      "importance": 0.00014030947991892163
+    },
+    {
+      "rank": 461,
+      "feature": "36_tBodyAcc-arCoeff()-Z,3",
+      "importance": 0.00013973151120142292
+    },
+    {
+      "rank": 462,
+      "feature": "306_fBodyAcc-bandsEnergy()-25,32",
+      "importance": 0.00013950441864808057
+    },
+    {
+      "rank": 463,
+      "feature": "377_fBodyAccJerk-kurtosis()-X",
+      "importance": 0.00013925462548511474
+    },
+    {
+      "rank": 464,
+      "feature": "537_fBodyBodyGyroMag-entropy()",
+      "importance": 0.00013878472821584112
+    },
+    {
+      "rank": 465,
+      "feature": "2_tBodyAcc-mean()-Y",
+      "importance": 0.0001378551716870254
+    },
+    {
+      "rank": 466,
+      "feature": "323_fBodyAcc-bandsEnergy()-49,56",
+      "importance": 0.00013518744495375246
+    },
+    {
+      "rank": 467,
+      "feature": "262_tBodyGyroJerkMag-arCoeff()1",
+      "importance": 0.00013494844427405217
+    },
+    {
+      "rank": 468,
+      "feature": "34_tBodyAcc-arCoeff()-Z,1",
+      "importance": 0.00013383806911036394
+    },
+    {
+      "rank": 469,
+      "feature": "388_fBodyAccJerk-bandsEnergy()-49,56",
+      "importance": 0.00013300125427837954
+    },
+    {
+      "rank": 470,
+      "feature": "320_fBodyAcc-bandsEnergy()-25,32",
+      "importance": 0.0001321273401698742
+    },
+    {
+      "rank": 471,
+      "feature": "231_tBodyAccJerkMag-min()",
+      "importance": 0.00013102840186291517
+    },
+    {
+      "rank": 472,
+      "feature": "555_angle(tBodyAccMean,gravity)",
+      "importance": 0.00013033546752580283
+    },
+    {
+      "rank": 473,
+      "feature": "94_tBodyAccJerk-min()-Y",
+      "importance": 0.00012970399418653364
+    },
+    {
+      "rank": 474,
+      "feature": "213_tBodyAccMag-arCoeff()4",
+      "importance": 0.00012958877367706846
+    },
+    {
+      "rank": 475,
+      "feature": "401_fBodyAccJerk-bandsEnergy()-41,48",
+      "importance": 0.0001288629637685345
+    },
+    {
+      "rank": 476,
+      "feature": "464_fBodyGyro-bandsEnergy()-25,32",
+      "importance": 0.00012886006990905235
+    },
+    {
+      "rank": 477,
+      "feature": "33_tBodyAcc-arCoeff()-Y,4",
+      "importance": 0.00012885422855297944
+    },
+    {
+      "rank": 478,
+      "feature": "205_tBodyAccMag-min()",
+      "importance": 0.00012834876904157518
+    },
+    {
+      "rank": 479,
+      "feature": "359_fBodyAccJerk-min()-Z",
+      "importance": 0.00012592440311436166
+    },
+    {
+      "rank": 480,
+      "feature": "485_fBodyGyro-bandsEnergy()-33,48",
+      "importance": 0.00012284539376051322
+    },
+    {
+      "rank": 481,
+      "feature": "314_fBodyAcc-bandsEnergy()-49,64",
+      "importance": 0.00012216186626467444
+    },
+    {
+      "rank": 482,
+      "feature": "154_tBodyGyro-arCoeff()-Z,1",
+      "importance": 0.00012184008115633453
+    },
+    {
+      "rank": 483,
+      "feature": "393_fBodyAccJerk-bandsEnergy()-49,64",
+      "importance": 0.00012055091086716737
+    },
+    {
+      "rank": 484,
+      "feature": "82_tBodyAccJerk-mean()-Y",
+      "importance": 0.00012001839933501925
+    },
+    {
+      "rank": 485,
+      "feature": "225_tGravityAccMag-arCoeff()3",
+      "importance": 0.00011973039600098082
+    },
+    {
+      "rank": 486,
+      "feature": "407_fBodyAccJerk-bandsEnergy()-49,64",
+      "importance": 0.00011891907268048464
+    },
+    {
+      "rank": 487,
+      "feature": "218_tGravityAccMag-min()",
+      "importance": 0.00011868428967137843
+    },
+    {
+      "rank": 488,
+      "feature": "29_tBodyAcc-arCoeff()-X,4",
+      "importance": 0.00011854371367863487
+    },
+    {
+      "rank": 489,
+      "feature": "238_tBodyAccJerkMag-arCoeff()3",
+      "importance": 0.00011809487130039697
+    },
+    {
+      "rank": 490,
+      "feature": "540_fBodyBodyGyroMag-skewness()",
+      "importance": 0.00011719061820981949
+    },
+    {
+      "rank": 491,
+      "feature": "551_fBodyBodyGyroJerkMag-maxInds",
+      "importance": 0.00011479662346659853
+    },
+    {
+      "rank": 492,
+      "feature": "155_tBodyGyro-arCoeff()-Z,2",
+      "importance": 0.00011444409224669081
+    },
+    {
+      "rank": 493,
+      "feature": "246_tBodyGyroMag-energy()",
+      "importance": 0.00011425688527094809
+    },
+    {
+      "rank": 494,
+      "feature": "367_fBodyAccJerk-entropy()-X",
+      "importance": 0.00011404908956863448
+    },
+    {
+      "rank": 495,
+      "feature": "112_tBodyAccJerk-arCoeff()-Y,3",
+      "importance": 0.00011402745517271015
+    },
+    {
+      "rank": 496,
+      "feature": "437_fBodyGyro-min()-Y",
+      "importance": 0.00011356190944542068
+    },
+    {
+      "rank": 497,
+      "feature": "152_tBodyGyro-arCoeff()-Y,3",
+      "importance": 0.00011349970822984592
+    },
+    {
+      "rank": 498,
+      "feature": "324_fBodyAcc-bandsEnergy()-57,64",
+      "importance": 0.00011277892796763421
+    },
+    {
+      "rank": 499,
+      "feature": "406_fBodyAccJerk-bandsEnergy()-33,48",
+      "importance": 0.00011246931032391947
+    },
+    {
+      "rank": 500,
+      "feature": "338_fBodyAcc-bandsEnergy()-57,64",
+      "importance": 0.00011130211832366125
+    },
+    {
+      "rank": 501,
+      "feature": "481_fBodyGyro-bandsEnergy()-49,56",
+      "importance": 0.0001097284470064808
+    },
+    {
+      "rank": 502,
+      "feature": "550_fBodyBodyGyroJerkMag-entropy()",
+      "importance": 0.00010781020436418692
+    },
+    {
+      "rank": 503,
+      "feature": "327_fBodyAcc-bandsEnergy()-33,48",
+      "importance": 0.00010769193576241174
+    },
+    {
+      "rank": 504,
+      "feature": "226_tGravityAccMag-arCoeff()4",
+      "importance": 0.00010695235551405042
+    },
+    {
+      "rank": 505,
+      "feature": "212_tBodyAccMag-arCoeff()3",
+      "importance": 0.00010642330468000647
+    },
+    {
+      "rank": 506,
+      "feature": "111_tBodyAccJerk-arCoeff()-Y,2",
+      "importance": 0.00010518281514445581
+    },
+    {
+      "rank": 507,
+      "feature": "416_fBodyAccJerk-bandsEnergy()-49,56",
+      "importance": 0.00010478899643889365
+    },
+    {
+      "rank": 508,
+      "feature": "196_tBodyGyroJerk-arCoeff()-Z,3",
+      "importance": 0.0001047419875054803
+    },
+    {
+      "rank": 509,
+      "feature": "310_fBodyAcc-bandsEnergy()-57,64",
+      "importance": 0.00010435864123661541
+    },
+    {
+      "rank": 510,
+      "feature": "371_fBodyAccJerk-maxInds-Y",
+      "importance": 0.00010418269360721906
+    },
+    {
+      "rank": 511,
+      "feature": "107_tBodyAccJerk-arCoeff()-X,2",
+      "importance": 0.00010395379147076543
+    },
+    {
+      "rank": 512,
+      "feature": "237_tBodyAccJerkMag-arCoeff()2",
+      "importance": 0.00010353288399502571
+    },
+    {
+      "rank": 513,
+      "feature": "399_fBodyAccJerk-bandsEnergy()-25,32",
+      "importance": 0.00010227530193403115
+    },
+    {
+      "rank": 514,
+      "feature": "321_fBodyAcc-bandsEnergy()-33,40",
+      "importance": 9.688868114933097e-05
+    },
+    {
+      "rank": 515,
+      "feature": "526_fBodyBodyAccJerkMag-meanFreq()",
+      "importance": 9.478746491660231e-05
+    },
+    {
+      "rank": 516,
+      "feature": "35_tBodyAcc-arCoeff()-Z,2",
+      "importance": 9.453483706838963e-05
+    },
+    {
+      "rank": 517,
+      "feature": "549_fBodyBodyGyroJerkMag-iqr()",
+      "importance": 9.382680466668243e-05
+    },
+    {
+      "rank": 518,
+      "feature": "421_fBodyAccJerk-bandsEnergy()-49,64",
+      "importance": 9.378655769755993e-05
+    },
+    {
+      "rank": 519,
+      "feature": "541_fBodyBodyGyroMag-kurtosis()",
+      "importance": 9.341002816186886e-05
+    },
+    {
+      "rank": 520,
+      "feature": "32_tBodyAcc-arCoeff()-Y,3",
+      "importance": 9.322974826962295e-05
+    },
+    {
+      "rank": 521,
+      "feature": "358_fBodyAccJerk-min()-Y",
+      "importance": 9.283230330412278e-05
+    },
+    {
+      "rank": 522,
+      "feature": "389_fBodyAccJerk-bandsEnergy()-57,64",
+      "importance": 9.259879149699504e-05
+    },
+    {
+      "rank": 523,
+      "feature": "402_fBodyAccJerk-bandsEnergy()-49,56",
+      "importance": 9.215722202289266e-05
+    },
+    {
+      "rank": 524,
+      "feature": "192_tBodyGyroJerk-arCoeff()-Y,3",
+      "importance": 9.189836686179597e-05
+    },
+    {
+      "rank": 525,
+      "feature": "280_fBodyAcc-min()-Z",
+      "importance": 9.141697493788573e-05
+    },
+    {
+      "rank": 526,
+      "feature": "403_fBodyAccJerk-bandsEnergy()-57,64",
+      "importance": 9.047091305140237e-05
+    },
+    {
+      "rank": 527,
+      "feature": "392_fBodyAccJerk-bandsEnergy()-33,48",
+      "importance": 9.044963291665511e-05
+    },
+    {
+      "rank": 528,
+      "feature": "515_fBodyAccMag-kurtosis()",
+      "importance": 8.960896604253629e-05
+    },
+    {
+      "rank": 529,
+      "feature": "525_fBodyBodyAccJerkMag-maxInds",
+      "importance": 8.93926592391147e-05
+    },
+    {
+      "rank": 530,
+      "feature": "83_tBodyAccJerk-mean()-Z",
+      "importance": 8.877872887657006e-05
+    },
+    {
+      "rank": 531,
+      "feature": "264_tBodyGyroJerkMag-arCoeff()3",
+      "importance": 8.833750727060122e-05
+    },
+    {
+      "rank": 532,
+      "feature": "31_tBodyAcc-arCoeff()-Y,2",
+      "importance": 8.831258938246021e-05
+    },
+    {
+      "rank": 533,
+      "feature": "482_fBodyGyro-bandsEnergy()-57,64",
+      "importance": 8.738790624286005e-05
+    },
+    {
+      "rank": 534,
+      "feature": "480_fBodyGyro-bandsEnergy()-41,48",
+      "importance": 8.675227594531414e-05
+    },
+    {
+      "rank": 535,
+      "feature": "115_tBodyAccJerk-arCoeff()-Z,2",
+      "importance": 8.56085160139804e-05
+    },
+    {
+      "rank": 536,
+      "feature": "341_fBodyAcc-bandsEnergy()-33,48",
+      "importance": 8.528375447755276e-05
+    },
+    {
+      "rank": 537,
+      "feature": "417_fBodyAccJerk-bandsEnergy()-57,64",
+      "importance": 8.10036184862295e-05
+    },
+    {
+      "rank": 538,
+      "feature": "286_fBodyAcc-iqr()-Y",
+      "importance": 8.091833421541867e-05
+    },
+    {
+      "rank": 539,
+      "feature": "387_fBodyAccJerk-bandsEnergy()-41,48",
+      "importance": 8.013377822693758e-05
+    },
+    {
+      "rank": 540,
+      "feature": "524_fBodyBodyAccJerkMag-entropy()",
+      "importance": 8.001090418315905e-05
+    },
+    {
+      "rank": 541,
+      "feature": "556_angle(tBodyAccJerkMean),gravityMean)",
+      "importance": 7.790984805592593e-05
+    },
+    {
+      "rank": 542,
+      "feature": "134_tBodyGyro-min()-Y",
+      "importance": 7.77677882135034e-05
+    },
+    {
+      "rank": 543,
+      "feature": "308_fBodyAcc-bandsEnergy()-41,48",
+      "importance": 7.754706204693536e-05
+    },
+    {
+      "rank": 544,
+      "feature": "546_fBodyBodyGyroJerkMag-min()",
+      "importance": 7.696179506835779e-05
+    },
+    {
+      "rank": 545,
+      "feature": "242_tBodyGyroMag-mad()",
+      "importance": 7.678025663786044e-05
+    },
+    {
+      "rank": 546,
+      "feature": "256_tBodyGyroJerkMag-max()",
+      "importance": 7.53493951304154e-05
+    },
+    {
+      "rank": 547,
+      "feature": "357_fBodyAccJerk-min()-X",
+      "importance": 7.43008662246244e-05
+    },
+    {
+      "rank": 548,
+      "feature": "520_fBodyBodyAccJerkMag-min()",
+      "importance": 7.201238797639801e-05
+    },
+    {
+      "rank": 549,
+      "feature": "293_fBodyAcc-maxInds-Z",
+      "importance": 7.002184305206258e-05
+    },
+    {
+      "rank": 550,
+      "feature": "81_tBodyAccJerk-mean()-X",
+      "importance": 6.930981167994665e-05
+    },
+    {
+      "rank": 551,
+      "feature": "278_fBodyAcc-min()-X",
+      "importance": 6.823417485763497e-05
+    },
+    {
+      "rank": 552,
+      "feature": "507_fBodyAccMag-min()",
+      "importance": 6.67988181355098e-05
+    },
+    {
+      "rank": 553,
+      "feature": "328_fBodyAcc-bandsEnergy()-49,64",
+      "importance": 6.634016129497589e-05
+    },
+    {
+      "rank": 554,
+      "feature": "162_tBodyGyroJerk-mean()-Y",
+      "importance": 6.493985647953716e-05
+    },
+    {
+      "rank": 555,
+      "feature": "386_fBodyAccJerk-bandsEnergy()-33,40",
+      "importance": 6.460322546267215e-05
+    },
+    {
+      "rank": 556,
+      "feature": "322_fBodyAcc-bandsEnergy()-41,48",
+      "importance": 6.175199923105199e-05
+    },
+    {
+      "rank": 557,
+      "feature": "342_fBodyAcc-bandsEnergy()-49,64",
+      "importance": 6.010706343580674e-05
+    },
+    {
+      "rank": 558,
+      "feature": "250_tBodyGyroMag-arCoeff()2",
+      "importance": 5.969621596336493e-05
+    },
+    {
+      "rank": 559,
+      "feature": "28_tBodyAcc-arCoeff()-X,3",
+      "importance": 4.254035641342736e-05
+    },
+    {
+      "rank": 560,
+      "feature": "523_fBodyBodyAccJerkMag-iqr()",
+      "importance": 3.732596722866688e-05
+    },
+    {
+      "rank": 561,
+      "feature": "279_fBodyAcc-min()-Y",
+      "importance": 3.061592676445014e-05
+    }
+  ]
+}
