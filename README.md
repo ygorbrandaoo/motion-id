@@ -82,7 +82,7 @@ Tests that use the real dataset are skipped if it is not in `data/raw/UCI HAR Da
 ## Research documents
 
 - [Research proposal](docs/proposal.md)
-- [Submission PDF in Portuguese](docs/Motion-ID_Artigo_IEEE.pdf)
+- [Submission PDF in Portuguese](docs/Motion-ID_Artigo_IEEE_.pdf)
 - [Dataset and references](docs/dataset.md)
 
 ## Limitations
