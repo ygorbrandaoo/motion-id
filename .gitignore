@@ -4,6 +4,8 @@
 
 # Environments and caches
 .venv/
+.venv-*/
+*.egg-info/
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -18,6 +20,8 @@ __pycache__/
 
 # Model artifacts
 /results/models/
+/results/metrics/
+/results/figures
 *.joblib
 
 # Operating systems
@@ -32,3 +36,11 @@ CLAUDE.local.md
 .agents/
 .claude/
 .codex/
+
+# LaTeX build files
+paper/*.aux
+paper/*.log
+paper/*.bbl
+paper/*.blg
+paper/*.out
+paper/main.pdf
